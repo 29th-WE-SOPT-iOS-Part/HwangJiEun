@@ -1,28 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="SignInVC" customModule="_9th_Assign_Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="3Ep-aS-3X0">
+                                <rect key="frame" x="132" y="74" width="150" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Ep-aS-3X0" secondAttribute="height" multiplier="15:8" id="8ip-u8-QAX"/>
+                                    <constraint firstAttribute="height" constant="80" id="UMB-WN-LWy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-XP-CnP">
+                                <rect key="frame" x="161.5" y="154" width="91" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube도 이동하며 계속하세요.앱 및 Safari에서도 Google 서비스에 로그인됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-it-Abg">
+                                <rect key="frame" x="25" y="241" width="364" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TyV-OR-Lfb">
+                                <rect key="frame" x="30" y="337" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="g75-ZV-oms"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0V-lO-FgW">
+                                <rect key="frame" x="30" y="413" width="354" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqV-98-doY">
+                                <rect key="frame" x="30" y="649" width="62" height="40"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-8h-qXO">
+                                <rect key="frame" x="322" y="649" width="62" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8lr-eB-QgU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjw-QZ-XO8">
+                                <rect key="frame" x="30" y="489" width="354" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MqV-98-doY" firstAttribute="top" secondItem="yjw-QZ-XO8" secondAttribute="bottom" constant="100" id="2ue-ro-is6"/>
+                            <constraint firstItem="v5g-XP-CnP" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="4Ln-1t-pbR"/>
+                            <constraint firstItem="yjw-QZ-XO8" firstAttribute="width" secondItem="TyV-OR-Lfb" secondAttribute="width" id="5jW-Sj-uxT"/>
+                            <constraint firstAttribute="trailing" secondItem="cH4-it-Abg" secondAttribute="trailing" constant="25" id="6Ez-9M-w6R"/>
+                            <constraint firstItem="MqV-98-doY" firstAttribute="leading" secondItem="TyV-OR-Lfb" secondAttribute="leading" id="CeH-rZ-nhl"/>
+                            <constraint firstItem="cH4-it-Abg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="Cql-GU-9Yd"/>
+                            <constraint firstItem="yjw-QZ-XO8" firstAttribute="top" secondItem="d0V-lO-FgW" secondAttribute="bottom" constant="16" id="HMJ-5Z-6ji"/>
+                            <constraint firstItem="MqV-98-doY" firstAttribute="height" secondItem="Dyg-8h-qXO" secondAttribute="height" id="HNl-K7-Qd3"/>
+                            <constraint firstItem="yjw-QZ-XO8" firstAttribute="centerX" secondItem="TyV-OR-Lfb" secondAttribute="centerX" id="Hxa-sv-eYQ"/>
+                            <constraint firstItem="yjw-QZ-XO8" firstAttribute="height" secondItem="TyV-OR-Lfb" secondAttribute="height" id="PjD-f9-czy"/>
+                            <constraint firstItem="d0V-lO-FgW" firstAttribute="width" secondItem="TyV-OR-Lfb" secondAttribute="width" id="Qao-Sg-P4r"/>
+                            <constraint firstItem="d0V-lO-FgW" firstAttribute="centerX" secondItem="TyV-OR-Lfb" secondAttribute="centerX" id="Rga-Bn-c00"/>
+                            <constraint firstItem="d0V-lO-FgW" firstAttribute="top" secondItem="TyV-OR-Lfb" secondAttribute="bottom" constant="16" id="VYX-JK-7ND"/>
+                            <constraint firstItem="TyV-OR-Lfb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="WvX-g3-twN"/>
+                            <constraint firstItem="3Ep-aS-3X0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ZDR-Xc-eUG"/>
+                            <constraint firstItem="Dyg-8h-qXO" firstAttribute="centerY" secondItem="MqV-98-doY" secondAttribute="centerY" id="a92-b3-04f"/>
+                            <constraint firstItem="d0V-lO-FgW" firstAttribute="height" secondItem="TyV-OR-Lfb" secondAttribute="height" id="d4S-rn-nCo"/>
+                            <constraint firstItem="TyV-OR-Lfb" firstAttribute="top" secondItem="cH4-it-Abg" secondAttribute="bottom" constant="55" id="h3s-HD-x06"/>
+                            <constraint firstItem="3Ep-aS-3X0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="ii0-Ef-RkP"/>
+                            <constraint firstItem="Dyg-8h-qXO" firstAttribute="trailing" secondItem="yjw-QZ-XO8" secondAttribute="trailing" id="iqf-UJ-jZc"/>
+                            <constraint firstItem="v5g-XP-CnP" firstAttribute="top" secondItem="3Ep-aS-3X0" secondAttribute="bottom" id="nPM-Ce-mgz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TyV-OR-Lfb" secondAttribute="trailing" constant="30" id="qZR-Gi-8aM"/>
+                            <constraint firstItem="cH4-it-Abg" firstAttribute="top" secondItem="v5g-XP-CnP" secondAttribute="bottom" constant="45" id="rb8-TC-afY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="117"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Google-Logo" width="3840" height="2160"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

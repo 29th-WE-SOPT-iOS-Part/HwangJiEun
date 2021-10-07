@@ -8,22 +8,37 @@
 import UIKit
 
 class SignConfirmVC: UIViewController {
+    
+    static let identifier = "SignConfirmVC"
+    var userName: String?
 
+    @IBOutlet var userWelcomeLabel: UILabel!
+    @IBOutlet var confirmBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUserWelcomeLabelText()
+        setConfirmBtnAttributes(fontSize: 15, cornerRadius: 10)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    /// userName 전달받아 구성하는 함수
+    func setUserWelcomeLabelText() {
+        if let user = userName {
+            userWelcomeLabel.text = "\(user)님 \n환영합니다!"
+            userWelcomeLabel.sizeToFit()
+        }
     }
-    */
 
+    /// confirmBtn Attributes 설정
+    func setConfirmBtnAttributes(fontSize: CGFloat, cornerRadius: CGFloat) {
+        confirmBtn.setTitle("확인", for: .normal)
+        confirmBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
+        confirmBtn.titleLabel?.tintColor = .white
+        confirmBtn.backgroundColor = .googleBlue
+        confirmBtn.layer.cornerRadius = cornerRadius
+    }
+    
+    @IBAction func dismissBtnDidTap(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

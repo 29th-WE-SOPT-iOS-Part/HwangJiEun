@@ -16,6 +16,7 @@
 		33E259B2270F36E6009435EA /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E259B1270F36E6009435EA /* SignInVC.swift */; };
 		33E259B4270F36F0009435EA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E259B3270F36F0009435EA /* SignUpVC.swift */; };
 		33E259B6270F3700009435EA /* SignConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E259B5270F3700009435EA /* SignConfirmVC.swift */; };
+		33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		33E259B1270F36E6009435EA /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		33E259B3270F36F0009435EA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		33E259B5270F3700009435EA /* SignConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignConfirmVC.swift; sourceTree = "<group>"; };
+		33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				33E259AD270F3672009435EA /* UIColor+Additions.swift */,
+				33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				33E25992270F3537009435EA /* AppDelegate.swift in Sources */,
 				33E259B2270F36E6009435EA /* SignInVC.swift in Sources */,
 				33E259B4270F36F0009435EA /* SignUpVC.swift in Sources */,
+				33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */,
 				33E259B6270F3700009435EA /* SignConfirmVC.swift in Sources */,
 				33E25994270F3537009435EA /* SceneDelegate.swift in Sources */,
 			);

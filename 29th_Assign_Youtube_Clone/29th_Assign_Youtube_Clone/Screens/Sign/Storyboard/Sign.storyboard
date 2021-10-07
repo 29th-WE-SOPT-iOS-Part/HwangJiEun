@@ -24,19 +24,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-XP-CnP">
-                                <rect key="frame" x="161.5" y="154" width="91" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <rect key="frame" x="168" y="154" width="78" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube도 이동하며 계속하세요.앱 및 Safari에서도 Google 서비스에 로그인됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-it-Abg">
-                                <rect key="frame" x="25" y="241" width="364" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube도 이동하며 계속하세요. 앱 및 Safari에서도 Google 서비스에 로그인됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-it-Abg">
+                                <rect key="frame" x="25" y="235" width="364" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TyV-OR-Lfb">
-                                <rect key="frame" x="30" y="337" width="354" height="60"/>
+                                <rect key="frame" x="30" y="328.5" width="354" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="g75-ZV-oms"/>
                                 </constraints>
@@ -44,30 +44,34 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0V-lO-FgW">
-                                <rect key="frame" x="30" y="413" width="354" height="60"/>
+                                <rect key="frame" x="30" y="404.5" width="354" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqV-98-doY">
-                                <rect key="frame" x="30" y="649" width="62" height="40"/>
+                                <rect key="frame" x="30" y="640.5" width="38" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
-                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FCx-ZN-SwZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-8h-qXO">
-                                <rect key="frame" x="322" y="649" width="62" height="40"/>
+                                <rect key="frame" x="304" y="640.5" width="80" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0tF-vW-v8H"/>
                                     <constraint firstAttribute="height" constant="40" id="8lr-eB-QgU"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
-                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6o5-x0-zeV"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjw-QZ-XO8">
-                                <rect key="frame" x="30" y="489" width="354" height="60"/>
+                                <rect key="frame" x="30" y="480.5" width="354" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -100,6 +104,13 @@
                             <constraint firstItem="cH4-it-Abg" firstAttribute="top" secondItem="v5g-XP-CnP" secondAttribute="bottom" constant="45" id="rb8-TC-afY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailPhoneTextField" destination="d0V-lO-FgW" id="5Pp-0B-iAP"/>
+                        <outlet property="nameTextField" destination="TyV-OR-Lfb" id="brb-sv-616"/>
+                        <outlet property="pwTextField" destination="yjw-QZ-XO8" id="Cue-MU-DD1"/>
+                        <outlet property="signInBtn" destination="Dyg-8h-qXO" id="ngx-sO-dCN"/>
+                        <outlet property="signUpBtn" destination="MqV-98-doY" id="CVH-C9-xPV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

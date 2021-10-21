@@ -50,5 +50,6 @@ class SignConfirmVC: UIViewController {
     
     @IBAction func otherAccountBtnDidTap(_ sender: UIButton) {
         // 로그인 화면으로 dismiss
+        self.dismiss(animated: true, completion: nil)
     }
 }

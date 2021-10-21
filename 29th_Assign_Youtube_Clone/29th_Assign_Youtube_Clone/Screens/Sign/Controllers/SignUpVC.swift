@@ -179,7 +179,10 @@ class SignUpVC: UIViewController {
         confirmVC.userName = signUpNameTextField.text
         
         confirmVC.modalPresentationStyle = .fullScreen
-        self.present(confirmVC, animated: true, completion: nil)
+        self.present(confirmVC, animated: true, completion: {
+            //confirmVC로 modal present와 동시에 navigation stack에서 signUpVC를 pop해줘서 rootVC로 돌아가게끔 해줍니다. (popViewController, popToRootViewController 모두 가능)
+            self.navigationController?.popToRootViewController(animated: true)
+        })
     }
 }
 

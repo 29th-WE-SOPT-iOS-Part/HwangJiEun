@@ -25,6 +25,7 @@
 		33F46D7B2721DF9900520C4A /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D7A2721DF9900520C4A /* UIButton+Extension.swift */; };
 		33F46D802721E36300520C4A /* SignTopReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D7F2721E36300520C4A /* SignTopReusableView.xib */; };
 		33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D832721E41A00520C4A /* SignTopReusableView.swift */; };
+		33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D872721FA2300520C4A /* YoutubeTBC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		33F46D7A2721DF9900520C4A /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		33F46D7F2721E36300520C4A /* SignTopReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignTopReusableView.xib; sourceTree = "<group>"; };
 		33F46D832721E41A00520C4A /* SignTopReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTopReusableView.swift; sourceTree = "<group>"; };
+		33F46D872721FA2300520C4A /* YoutubeTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTBC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		33E259A7270F3586009435EA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				33F46D872721FA2300520C4A /* YoutubeTBC.swift */,
 				33E259A9270F35EC009435EA /* Sign */,
 			);
 			path = Screens;
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */,
+				33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */,
 				33E259AE270F3672009435EA /* UIColor+Additions.swift in Sources */,
 				33E25992270F3537009435EA /* AppDelegate.swift in Sources */,
 				33E259B2270F36E6009435EA /* SignInVC.swift in Sources */,

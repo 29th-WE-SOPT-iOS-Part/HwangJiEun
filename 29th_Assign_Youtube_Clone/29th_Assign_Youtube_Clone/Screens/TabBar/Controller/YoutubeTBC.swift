@@ -8,7 +8,9 @@
 import UIKit
 
 class YoutubeTBC: UITabBarController {
-
+    
+    static let identifier = "YoutubeTBC"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBar()

@@ -45,7 +45,12 @@ class SignConfirmVC: UIViewController {
     }
     
     @IBAction func confirmBtnDidTap(_ sender: UIButton) {
-       // 탭바VC로 이동 + rootVC 설정
+       // 탭바VC로 이동
+        let tabBarSB = UIStoryboard.init(name: "TabBar", bundle: nil)
+        guard let tabBarVC = tabBarSB.instantiateViewController(identifier: YoutubeTBC.identifier) as? YoutubeTBC else { return }
+        
+        tabBarVC.modalPresentationStyle = .fullScreen
+        self.present(tabBarVC, animated: true, completion: nil)
     }
     
     @IBAction func otherAccountBtnDidTap(_ sender: UIButton) {

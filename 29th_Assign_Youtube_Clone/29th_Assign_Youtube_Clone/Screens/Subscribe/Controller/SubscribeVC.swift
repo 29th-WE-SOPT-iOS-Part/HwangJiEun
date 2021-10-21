@@ -8,6 +8,8 @@
 import UIKit
 
 class SubscribeVC: UIViewController {
+    
+    static let identifier = "SubscribeVC"
 
     override func viewDidLoad() {
         super.viewDidLoad()

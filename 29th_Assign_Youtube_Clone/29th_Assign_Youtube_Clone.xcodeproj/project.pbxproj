@@ -27,6 +27,16 @@
 		33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D832721E41A00520C4A /* SignTopReusableView.swift */; };
 		33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D872721FA2300520C4A /* YoutubeTBC.swift */; };
 		33F46D8D2721FAB500520C4A /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D8C2721FAB500520C4A /* TabBar.storyboard */; };
+		33F46D9E2721FC8A00520C4A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D9D2721FC8A00520C4A /* Home.storyboard */; };
+		33F46DA02721FC9600520C4A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D9F2721FC9600520C4A /* HomeVC.swift */; };
+		33F46DA22721FCB400520C4A /* Shorts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46DA12721FCB400520C4A /* Shorts.storyboard */; };
+		33F46DA42721FCC300520C4A /* ShortsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46DA32721FCC300520C4A /* ShortsVC.swift */; };
+		33F46DA62721FCCB00520C4A /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46DA52721FCCB00520C4A /* Add.storyboard */; };
+		33F46DA82721FCD700520C4A /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46DA72721FCD700520C4A /* AddVC.swift */; };
+		33F46DAA2721FCE200520C4A /* Subscribe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46DA92721FCE200520C4A /* Subscribe.storyboard */; };
+		33F46DAC2721FCF200520C4A /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46DAB2721FCF200520C4A /* SubscribeVC.swift */; };
+		33F46DAE2721FCFC00520C4A /* Cabinet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46DAD2721FCFC00520C4A /* Cabinet.storyboard */; };
+		33F46DB02721FD0A00520C4A /* CabinetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46DAF2721FD0A00520C4A /* CabinetVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +62,16 @@
 		33F46D832721E41A00520C4A /* SignTopReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTopReusableView.swift; sourceTree = "<group>"; };
 		33F46D872721FA2300520C4A /* YoutubeTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTBC.swift; sourceTree = "<group>"; };
 		33F46D8C2721FAB500520C4A /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TabBar.storyboard; path = ../../../../../../../../TabBar.storyboard; sourceTree = "<group>"; };
+		33F46D9D2721FC8A00520C4A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		33F46D9F2721FC9600520C4A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		33F46DA12721FCB400520C4A /* Shorts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shorts.storyboard; sourceTree = "<group>"; };
+		33F46DA32721FCC300520C4A /* ShortsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsVC.swift; sourceTree = "<group>"; };
+		33F46DA52721FCCB00520C4A /* Add.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		33F46DA72721FCD700520C4A /* AddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		33F46DA92721FCE200520C4A /* Subscribe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscribe.storyboard; sourceTree = "<group>"; };
+		33F46DAB2721FCF200520C4A /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
+		33F46DAD2721FCFC00520C4A /* Cabinet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cabinet.storyboard; sourceTree = "<group>"; };
+		33F46DAF2721FD0A00520C4A /* CabinetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +133,13 @@
 		33E259A7270F3586009435EA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				33F46D892721FA9500520C4A /* TabBar */,
 				33E259A9270F35EC009435EA /* Sign */,
+				33F46D892721FA9500520C4A /* TabBar */,
+				33F46D8E2721FBF300520C4A /* Home */,
+				33F46D8F2721FBFE00520C4A /* Shorts */,
+				33F46D902721FC0300520C4A /* Add */,
+				33F46D912721FC0A00520C4A /* Subscribe */,
+				33F46D922721FC1000520C4A /* Cabinet */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -213,6 +238,131 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		33F46D8E2721FBF300520C4A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D932721FC4500520C4A /* Storyboard */,
+				33F46D942721FC4C00520C4A /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		33F46D8F2721FBFE00520C4A /* Shorts */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D962721FC5A00520C4A /* Storyboard */,
+				33F46D952721FC5500520C4A /* Controller */,
+			);
+			path = Shorts;
+			sourceTree = "<group>";
+		};
+		33F46D902721FC0300520C4A /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D982721FC6500520C4A /* Storyboard */,
+				33F46D972721FC6000520C4A /* Controller */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		33F46D912721FC0A00520C4A /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D9A2721FC7100520C4A /* Storyboard */,
+				33F46D992721FC6B00520C4A /* Controller */,
+			);
+			path = Subscribe;
+			sourceTree = "<group>";
+		};
+		33F46D922721FC1000520C4A /* Cabinet */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D9C2721FC7C00520C4A /* Storyboard */,
+				33F46D9B2721FC7700520C4A /* Controller */,
+			);
+			path = Cabinet;
+			sourceTree = "<group>";
+		};
+		33F46D932721FC4500520C4A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D9D2721FC8A00520C4A /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		33F46D942721FC4C00520C4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D9F2721FC9600520C4A /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33F46D952721FC5500520C4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DA32721FCC300520C4A /* ShortsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33F46D962721FC5A00520C4A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DA12721FCB400520C4A /* Shorts.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		33F46D972721FC6000520C4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DA72721FCD700520C4A /* AddVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33F46D982721FC6500520C4A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DA52721FCCB00520C4A /* Add.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		33F46D992721FC6B00520C4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DAB2721FCF200520C4A /* SubscribeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33F46D9A2721FC7100520C4A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DA92721FCE200520C4A /* Subscribe.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		33F46D9B2721FC7700520C4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DAF2721FD0A00520C4A /* CabinetVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33F46D9C2721FC7C00520C4A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33F46DAD2721FCFC00520C4A /* Cabinet.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,10 +422,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F46D8D2721FAB500520C4A /* TabBar.storyboard in Resources */,
+				33F46D9E2721FC8A00520C4A /* Home.storyboard in Resources */,
+				33F46DA62721FCCB00520C4A /* Add.storyboard in Resources */,
 				33F46D802721E36300520C4A /* SignTopReusableView.xib in Resources */,
+				33F46DA22721FCB400520C4A /* Shorts.storyboard in Resources */,
+				33F46DAA2721FCE200520C4A /* Subscribe.storyboard in Resources */,
 				33F46D772721D5D800520C4A /* SF-Pro-Display-Medium.otf in Resources */,
 				33E2599E270F3538009435EA /* LaunchScreen.storyboard in Resources */,
 				33E259B0270F36BA009435EA /* Sign.storyboard in Resources */,
+				33F46DAE2721FCFC00520C4A /* Cabinet.storyboard in Resources */,
 				33F46D732721D5CF00520C4A /* SF-Pro-Display-Bold.otf in Resources */,
 				33F46D762721D5D600520C4A /* SF-Pro-Display-Semibold.otf in Resources */,
 				33F46D742721D5D200520C4A /* SF-Pro-Display-Regular.otf in Resources */,
@@ -292,14 +447,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */,
+				33F46DA42721FCC300520C4A /* ShortsVC.swift in Sources */,
 				33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */,
 				33E259AE270F3672009435EA /* UIColor+Additions.swift in Sources */,
 				33E25992270F3537009435EA /* AppDelegate.swift in Sources */,
+				33F46DAC2721FCF200520C4A /* SubscribeVC.swift in Sources */,
+				33F46DB02721FD0A00520C4A /* CabinetVC.swift in Sources */,
 				33E259B2270F36E6009435EA /* SignInVC.swift in Sources */,
 				33E259B4270F36F0009435EA /* SignUpVC.swift in Sources */,
+				33F46DA82721FCD700520C4A /* AddVC.swift in Sources */,
 				33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */,
 				33F46D7B2721DF9900520C4A /* UIButton+Extension.swift in Sources */,
 				33E259B6270F3700009435EA /* SignConfirmVC.swift in Sources */,
+				33F46DA02721FC9600520C4A /* HomeVC.swift in Sources */,
 				33E25994270F3537009435EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

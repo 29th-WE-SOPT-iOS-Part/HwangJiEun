@@ -8,6 +8,8 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    
+    static let identifier = "HomeVC"
 
     override func viewDidLoad() {
         super.viewDidLoad()

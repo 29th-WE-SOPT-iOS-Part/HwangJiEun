@@ -8,6 +8,8 @@
 import UIKit
 
 class ShortsVC: UIViewController {
+    
+    static let identifier = "ShortsVC"
 
     override func viewDidLoad() {
         super.viewDidLoad()

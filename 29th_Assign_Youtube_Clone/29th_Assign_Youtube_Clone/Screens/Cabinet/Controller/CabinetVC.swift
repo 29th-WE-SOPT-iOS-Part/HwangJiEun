@@ -8,6 +8,8 @@
 import UIKit
 
 class CabinetVC: UIViewController {
+    
+    static let identifier = "CabinetVC"
 
     override func viewDidLoad() {
         super.viewDidLoad()

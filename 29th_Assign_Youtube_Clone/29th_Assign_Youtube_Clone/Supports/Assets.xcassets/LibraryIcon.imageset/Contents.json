@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Google-Logo.png",
+      "filename" : "LibraryIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "LibraryIcon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "LibraryIcon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -132,7 +132,8 @@ class SignUpVC: UIViewController {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             
             // 키보드가 올라감에 따라 회원가입Label <-> signUpNameTextField간의 constraint 간격을 좁혀주었습니다.
-            signUpNameTextFieldTopConstraint.constant = 50
+            signUpNameTextFieldTopConstraint.constant = 10
+            
             
             // 키보드가 올라감에 따라 뷰의 프레임을 -10 올려 텍스트필드의 입력상태가 보이게 UI를 구성했습니다.
             if self.view.frame.origin.y == 0 {
@@ -149,8 +150,8 @@ class SignUpVC: UIViewController {
         }
         
         // 키보드가 내려감에 따라 회원가입Label <-> signUpNameTextField간의 constraint 간격을 기존대로 설정해주었습니다.
-        if signUpNameTextFieldTopConstraint.constant != 138.5 {
-            signUpNameTextFieldTopConstraint.constant = 138.5
+        if signUpNameTextFieldTopConstraint.constant != 87.5 {
+            signUpNameTextFieldTopConstraint.constant = 87.5
         }
     }
     

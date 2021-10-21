@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TyV-OR-Lfb">
-                                <rect key="frame" x="22" y="361.5" width="370" height="48"/>
+                                <rect key="frame" x="22" y="341.5" width="370" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="g75-ZV-oms"/>
                                 </constraints>
@@ -26,12 +26,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0V-lO-FgW">
-                                <rect key="frame" x="22" y="425.5" width="370" height="48"/>
+                                <rect key="frame" x="22" y="405.5" width="370" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqV-98-doY">
-                                <rect key="frame" x="22" y="637.5" width="38" height="42"/>
+                                <rect key="frame" x="22" y="617.5" width="38" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-8h-qXO">
-                                <rect key="frame" x="312" y="637.5" width="80" height="42"/>
+                                <rect key="frame" x="312" y="617.5" width="80" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="0tF-vW-v8H"/>
                                     <constraint firstAttribute="height" constant="42" id="8lr-eB-QgU"/>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjw-QZ-XO8">
-                                <rect key="frame" x="22" y="489.5" width="370" height="48"/>
+                                <rect key="frame" x="22" y="469.5" width="370" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -70,7 +70,7 @@
                         <constraints>
                             <constraint firstItem="MqV-98-doY" firstAttribute="top" secondItem="yjw-QZ-XO8" secondAttribute="bottom" constant="100" id="2ue-ro-is6"/>
                             <constraint firstItem="yjw-QZ-XO8" firstAttribute="width" secondItem="TyV-OR-Lfb" secondAttribute="width" id="5jW-Sj-uxT"/>
-                            <constraint firstItem="TyV-OR-Lfb" firstAttribute="top" secondItem="mp0-ee-G1u" secondAttribute="bottom" constant="107.5" id="7BW-Lj-ps0"/>
+                            <constraint firstItem="TyV-OR-Lfb" firstAttribute="top" secondItem="mp0-ee-G1u" secondAttribute="bottom" constant="87.5" id="7BW-Lj-ps0"/>
                             <constraint firstItem="MqV-98-doY" firstAttribute="leading" secondItem="TyV-OR-Lfb" secondAttribute="leading" id="CeH-rZ-nhl"/>
                             <constraint firstItem="yjw-QZ-XO8" firstAttribute="top" secondItem="d0V-lO-FgW" secondAttribute="bottom" constant="16" id="HMJ-5Z-6ji"/>
                             <constraint firstItem="MqV-98-doY" firstAttribute="height" secondItem="Dyg-8h-qXO" secondAttribute="height" id="HNl-K7-Qd3"/>
@@ -95,6 +95,7 @@
                         <outlet property="nameTextField" destination="TyV-OR-Lfb" id="brb-sv-616"/>
                         <outlet property="pwTextField" destination="yjw-QZ-XO8" id="Cue-MU-DD1"/>
                         <outlet property="signInBtn" destination="Dyg-8h-qXO" id="ngx-sO-dCN"/>
+                        <outlet property="signInNameTextFieldTopConstraint" destination="7BW-Lj-ps0" id="Lqc-5n-0eR"/>
                         <outlet property="signInTopView" destination="mp0-ee-G1u" id="Cfr-A0-qt5"/>
                         <outlet property="signUpBtn" destination="MqV-98-doY" id="CVH-C9-xPV"/>
                     </connections>

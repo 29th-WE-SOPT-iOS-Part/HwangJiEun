@@ -14,7 +14,6 @@ class SignInVC: UIViewController {
             signInTopView.setTextLabelFontStyle(.signIn, "로그인", "Youtube로 이동하여 계속하세요.\n앱 및 Safari에서도 Google 서비스에 로그인됩니다.")
         }
     }
-    
     @IBOutlet var nameTextField: UITextField! {
         didSet {
             nameTextField.delegate = self

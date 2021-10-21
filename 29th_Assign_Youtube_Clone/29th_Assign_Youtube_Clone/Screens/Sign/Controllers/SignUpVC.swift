@@ -16,7 +16,6 @@ class SignUpVC: UIViewController {
             signUpTopView.setTextLabelFontStyle(.signUp, "회원가입", "")
         }
     }
-    
     @IBOutlet var signUpNameTextField: UITextField! {
         didSet {
             signUpNameTextField.delegate = self
@@ -32,13 +31,13 @@ class SignUpVC: UIViewController {
             signUpPwTextField.delegate = self
         }
     }
-    @IBOutlet var pwAppearBtn: UIButton!
     @IBOutlet var signUpBtn: UIButton! {
         didSet {
             signUpBtn.setBackgroundColor(.googleLightGray, for: .disabled)
             signUpBtn.setBackgroundColor(.googleBlue, for: .normal)
         }
     }
+    @IBOutlet var pwAppearBtn: UIButton!
     @IBOutlet var signUpNameTextFieldTopConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {

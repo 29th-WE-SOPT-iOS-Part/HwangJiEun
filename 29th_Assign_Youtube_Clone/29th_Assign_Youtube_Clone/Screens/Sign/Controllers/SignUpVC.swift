@@ -11,6 +11,12 @@ class SignUpVC: UIViewController {
     
     static let identifier = "SignUpVC"
     
+    @IBOutlet var signUpTopView: SignTopReusableView! {
+        didSet {
+            signUpTopView.setTextLabelFontStyle(.signUp, "회원가입", "")
+        }
+    }
+    
     @IBOutlet var signUpNameTextField: UITextField! {
         didSet {
             signUpNameTextField.delegate = self
@@ -27,16 +33,21 @@ class SignUpVC: UIViewController {
         }
     }
     @IBOutlet var pwAppearBtn: UIButton!
-    @IBOutlet var signUpBtn: UIButton!
+    @IBOutlet var signUpBtn: UIButton! {
+        didSet {
+            signUpBtn.setBackgroundColor(.googleLightGray, for: .disabled)
+            signUpBtn.setBackgroundColor(.googleBlue, for: .normal)
+        }
+    }
     @IBOutlet var signUpNameTextFieldTopConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTextFieldBorderStyle(borderWidth: 1, cornerRadius: 10)
-        setTextFieldFontSize(fontSize: 16)
+        setTextFieldBorderStyle(borderWidth: 1, cornerRadius: 8, borderColor: .googleLightGray)
+        setTextFieldFontStyle(customFont: "SFProDisplay-Regular", fontSize: 15)
         addLeftPaddingInTextField()
         setTextFieldPlaceholder()
-        setPwAppearBtnAttributes(borderWidth: 2, cornerRadius: 5)
+        setPwAppearBtnAttributes(borderWidth: 1, borderColor: .googleLightGray, cornerRadius: 0)
         setSignUpBtnAttributes(fontSize: 15, cornerRadius: 10)
         setSignUpBtnState()
         textFieldEditingCheck()
@@ -45,7 +56,7 @@ class SignUpVC: UIViewController {
     
     //MARK: - UI
     /// TextField Border Styling
-    func setTextFieldBorderStyle(borderWidth: CGFloat, cornerRadius: CGFloat) {
+    func setTextFieldBorderStyle(borderWidth: CGFloat, cornerRadius: CGFloat, borderColor: UIColor) {
         signUpNameTextField.borderStyle = .none
         signUpEmailPhoneTextField.borderStyle = .none
         signUpPwTextField.borderStyle = .none
@@ -58,16 +69,16 @@ class SignUpVC: UIViewController {
         signUpEmailPhoneTextField.layer.cornerRadius = cornerRadius
         signUpPwTextField.layer.cornerRadius = cornerRadius
         
-        signUpNameTextField.layer.borderColor = UIColor.lightGray.cgColor
-        signUpEmailPhoneTextField.layer.borderColor = UIColor.lightGray.cgColor
-        signUpPwTextField.layer.borderColor = UIColor.lightGray.cgColor
+        signUpNameTextField.layer.borderColor = borderColor.cgColor
+        signUpEmailPhoneTextField.layer.borderColor = borderColor.cgColor
+        signUpPwTextField.layer.borderColor = borderColor.cgColor
     }
     
-    /// TextField Font Size 변경
-    func setTextFieldFontSize(fontSize: CGFloat) {
-        signUpNameTextField.font = UIFont.systemFont(ofSize: fontSize)
-        signUpEmailPhoneTextField.font = UIFont.systemFont(ofSize: fontSize)
-        signUpPwTextField.font = UIFont.systemFont(ofSize: fontSize)
+    /// TextField Font Style 변경
+    func setTextFieldFontStyle(customFont: String, fontSize: CGFloat) {
+        signUpNameTextField.font = UIFont(name: customFont, size: fontSize)
+        signUpEmailPhoneTextField.font = UIFont(name: customFont, size: fontSize)
+        signUpPwTextField.font = UIFont(name: customFont, size: fontSize)
     }
     
     /// TextField addLeftPadding
@@ -85,10 +96,10 @@ class SignUpVC: UIViewController {
     }
     
     /// appearPwBtn Attributes 설정
-    func setPwAppearBtnAttributes(borderWidth: CGFloat, cornerRadius: CGFloat) {
+    func setPwAppearBtnAttributes(borderWidth: CGFloat, borderColor: UIColor, cornerRadius: CGFloat) {
         pwAppearBtn.layer.borderWidth = borderWidth
         pwAppearBtn.layer.cornerRadius = cornerRadius
-        pwAppearBtn.layer.borderColor = UIColor.lightGray.cgColor
+        pwAppearBtn.layer.borderColor = borderColor.cgColor
         pwAppearBtn.imageView!.contentMode = .scaleAspectFit
         pwAppearBtn.contentVerticalAlignment = .fill
         pwAppearBtn.contentHorizontalAlignment = .fill

@@ -26,6 +26,7 @@
 		33F46D802721E36300520C4A /* SignTopReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D7F2721E36300520C4A /* SignTopReusableView.xib */; };
 		33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D832721E41A00520C4A /* SignTopReusableView.swift */; };
 		33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D872721FA2300520C4A /* YoutubeTBC.swift */; };
+		33F46D8D2721FAB500520C4A /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D8C2721FAB500520C4A /* TabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		33F46D7F2721E36300520C4A /* SignTopReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignTopReusableView.xib; sourceTree = "<group>"; };
 		33F46D832721E41A00520C4A /* SignTopReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTopReusableView.swift; sourceTree = "<group>"; };
 		33F46D872721FA2300520C4A /* YoutubeTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeTBC.swift; sourceTree = "<group>"; };
+		33F46D8C2721FAB500520C4A /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TabBar.storyboard; path = ../../../../../../../../TabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,7 @@
 		33E259A7270F3586009435EA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				33F46D872721FA2300520C4A /* YoutubeTBC.swift */,
+				33F46D892721FA9500520C4A /* TabBar */,
 				33E259A9270F35EC009435EA /* Sign */,
 			);
 			path = Screens;
@@ -186,6 +188,31 @@
 			path = VIew;
 			sourceTree = "<group>";
 		};
+		33F46D892721FA9500520C4A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D8A2721FA9D00520C4A /* Storyboard */,
+				33F46D8B2721FAA500520C4A /* Controller */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		33F46D8A2721FA9D00520C4A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D8C2721FAB500520C4A /* TabBar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		33F46D8B2721FAA500520C4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D872721FA2300520C4A /* YoutubeTBC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F46D8D2721FAB500520C4A /* TabBar.storyboard in Resources */,
 				33F46D802721E36300520C4A /* SignTopReusableView.xib in Resources */,
 				33F46D772721D5D800520C4A /* SF-Pro-Display-Medium.otf in Resources */,
 				33E2599E270F3538009435EA /* LaunchScreen.storyboard in Resources */,

@@ -17,6 +17,14 @@
 		33E259B4270F36F0009435EA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E259B3270F36F0009435EA /* SignUpVC.swift */; };
 		33E259B6270F3700009435EA /* SignConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E259B5270F3700009435EA /* SignConfirmVC.swift */; };
 		33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */; };
+		33F46D732721D5CF00520C4A /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D702721D5BE00520C4A /* SF-Pro-Display-Bold.otf */; };
+		33F46D742721D5D200520C4A /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D722721D5C800520C4A /* SF-Pro-Display-Regular.otf */; };
+		33F46D752721D5D400520C4A /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D6F2721D5BA00520C4A /* SF-Pro-Display-Light.otf */; };
+		33F46D762721D5D600520C4A /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D6E2721D5B600520C4A /* SF-Pro-Display-Semibold.otf */; };
+		33F46D772721D5D800520C4A /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D712721D5C200520C4A /* SF-Pro-Display-Medium.otf */; };
+		33F46D7B2721DF9900520C4A /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D7A2721DF9900520C4A /* UIButton+Extension.swift */; };
+		33F46D802721E36300520C4A /* SignTopReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F46D7F2721E36300520C4A /* SignTopReusableView.xib */; };
+		33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46D832721E41A00520C4A /* SignTopReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		33E259B3270F36F0009435EA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		33E259B5270F3700009435EA /* SignConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignConfirmVC.swift; sourceTree = "<group>"; };
 		33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extension.swift"; sourceTree = "<group>"; };
+		33F46D6E2721D5B600520C4A /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "../../../../../../../../Downloads/SF Pro Display/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		33F46D6F2721D5BA00520C4A /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Light.otf"; path = "../../../../../../../../Downloads/SF Pro Display/SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		33F46D702721D5BE00520C4A /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../../../../../../../Downloads/SF Pro Display/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		33F46D712721D5C200520C4A /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Medium.otf"; path = "../../../../../../../../Downloads/SF Pro Display/SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		33F46D722721D5C800520C4A /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Regular.otf"; path = "../../../../../../../../Downloads/SF Pro Display/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		33F46D7A2721DF9900520C4A /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		33F46D7F2721E36300520C4A /* SignTopReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignTopReusableView.xib; sourceTree = "<group>"; };
+		33F46D832721E41A00520C4A /* SignTopReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTopReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,8 @@
 		33E259A5270F3574009435EA /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				33F46D7E2721E34C00520C4A /* VIew */,
+				33F46D6D2721D5AC00520C4A /* Font */,
 				33E259AC270F3663009435EA /* Extensions */,
 				33E2599C270F3538009435EA /* LaunchScreen.storyboard */,
 			);
@@ -139,8 +157,30 @@
 			children = (
 				33E259AD270F3672009435EA /* UIColor+Additions.swift */,
 				33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */,
+				33F46D7A2721DF9900520C4A /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		33F46D6D2721D5AC00520C4A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D702721D5BE00520C4A /* SF-Pro-Display-Bold.otf */,
+				33F46D722721D5C800520C4A /* SF-Pro-Display-Regular.otf */,
+				33F46D6F2721D5BA00520C4A /* SF-Pro-Display-Light.otf */,
+				33F46D712721D5C200520C4A /* SF-Pro-Display-Medium.otf */,
+				33F46D6E2721D5B600520C4A /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		33F46D7E2721E34C00520C4A /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D7F2721E36300520C4A /* SignTopReusableView.xib */,
+				33F46D832721E41A00520C4A /* SignTopReusableView.swift */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +241,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F46D802721E36300520C4A /* SignTopReusableView.xib in Resources */,
+				33F46D772721D5D800520C4A /* SF-Pro-Display-Medium.otf in Resources */,
 				33E2599E270F3538009435EA /* LaunchScreen.storyboard in Resources */,
 				33E259B0270F36BA009435EA /* Sign.storyboard in Resources */,
+				33F46D732721D5CF00520C4A /* SF-Pro-Display-Bold.otf in Resources */,
+				33F46D762721D5D600520C4A /* SF-Pro-Display-Semibold.otf in Resources */,
+				33F46D742721D5D200520C4A /* SF-Pro-Display-Regular.otf in Resources */,
+				33F46D752721D5D400520C4A /* SF-Pro-Display-Light.otf in Resources */,
 				33E2599B270F3538009435EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,11 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */,
 				33E259AE270F3672009435EA /* UIColor+Additions.swift in Sources */,
 				33E25992270F3537009435EA /* AppDelegate.swift in Sources */,
 				33E259B2270F36E6009435EA /* SignInVC.swift in Sources */,
 				33E259B4270F36F0009435EA /* SignUpVC.swift in Sources */,
 				33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */,
+				33F46D7B2721DF9900520C4A /* UIButton+Extension.swift in Sources */,
 				33E259B6270F3700009435EA /* SignConfirmVC.swift in Sources */,
 				33E25994270F3537009435EA /* SceneDelegate.swift in Sources */,
 			);

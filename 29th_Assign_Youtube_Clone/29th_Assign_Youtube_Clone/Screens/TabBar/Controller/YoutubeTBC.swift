@@ -10,6 +10,7 @@ import UIKit
 class YoutubeTBC: UITabBarController {
     
     static let identifier = "YoutubeTBC"
+    let userDisplayInterfaceStyle = UITraitCollection.current.userInterfaceStyle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,13 @@ class YoutubeTBC: UITabBarController {
         tabBar.layer.borderWidth = 0.3
         tabBar.layer.borderColor = UIColor.lightGray.cgColor
         tabBar.clipsToBounds = true
+        //다크모드, 라이트모드 설정
+        if userDisplayInterfaceStyle == .dark {
+            tabBar.tintColor = .white
+        }
+        else {
+            tabBar.tintColor = .black
+        }
         
         
         /// HomeTab

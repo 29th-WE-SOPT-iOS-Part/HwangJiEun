@@ -14,6 +14,7 @@ enum SignState {
 class SignTopReusableView: UIView {
     
     let xibName = "SignTopReusableView"
+    let userDisplayInterfaceStyle = UITraitCollection.current.userInterfaceStyle
     
     @IBOutlet var signHeadTextLabel: UILabel!
     @IBOutlet var signDescTextLabel: UILabel!
@@ -23,10 +24,10 @@ class SignTopReusableView: UIView {
         commonInit()
     }
     
+    ///Label Font Style Setting
     func setTextLabelFontStyle(_ division: SignState, _ headText: String, _ descText: String) {
         //signHeadTextLabel
         signHeadTextLabel.font = UIFont(name: "SFProDisplay-Semibold", size: 24)
-        signHeadTextLabel.textColor = .googleDarkGray
         signHeadTextLabel.text = headText
         signHeadTextLabel.numberOfLines = 0
         signHeadTextLabel.textAlignment = .center
@@ -34,11 +35,22 @@ class SignTopReusableView: UIView {
         
         //signDescTextLabel
         signDescTextLabel.font = UIFont(name: "SFProDisplay-Regular", size: 14)
-        signDescTextLabel.textColor = .googleDarkGray
         signDescTextLabel.text = descText
         signDescTextLabel.numberOfLines = 0
         signDescTextLabel.textAlignment = .center
         signDescTextLabel.sizeToFit()
+        
+        //다크모드, 라이트모드에 따른 textColor변경
+        if userDisplayInterfaceStyle == .dark {
+            //다크모드
+            signHeadTextLabel.textColor = .white
+            signDescTextLabel.textColor = .white
+        }
+        else {
+            //라이트모드
+            signHeadTextLabel.textColor = .googleDarkGray
+            signDescTextLabel.textColor = .googleDarkGray
+        }
         
         switch division {
         case .signIn:

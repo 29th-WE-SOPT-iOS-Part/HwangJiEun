@@ -9,6 +9,11 @@ import UIKit
 
 class SignInVC: UIViewController {
     
+    @IBOutlet var signInTopView: SignTopReusableView! {
+        didSet {
+            signInTopView.setTextLabelFontStyle(.signIn, "로그인", "Youtube로 이동하여 계속하세요.\n앱 및 Safari에서도 Google 서비스에 로그인됩니다.")
+        }
+    }
     @IBOutlet var nameTextField: UITextField! {
         didSet {
             nameTextField.delegate = self
@@ -25,12 +30,18 @@ class SignInVC: UIViewController {
         }
     }
     @IBOutlet var signUpBtn: UIButton!
-    @IBOutlet var signInBtn: UIButton!
+    @IBOutlet var signInBtn: UIButton! {
+        didSet {
+            signInBtn.setBackgroundColor(.googleLightGray, for: .disabled)
+        }
+    }
+    @IBOutlet var signInNameTextFieldTopConstraint: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTextFieldBorderStyle(borderWidth: 1, cornerRadius: 10)
-        setTextFieldFontSize(fontSize: 16)
+        setTextFieldBorderStyle(borderWidth: 1, cornerRadius: 8, borderColor: .googleLightGray)
+        setTextFieldFontStyle(customFont: "SFProDisplay-Regular", fontSize: 15)
         addLeftPaddingInTextField()
         setTextFieldPlaceholder()
         setBtnAttributes(fontSize: 15)
@@ -40,30 +51,30 @@ class SignInVC: UIViewController {
     }
     
     /// TextField Border Styling
-    func setTextFieldBorderStyle(borderWidth: CGFloat, cornerRadius: CGFloat) {
+    func setTextFieldBorderStyle(borderWidth: CGFloat, cornerRadius: CGFloat, borderColor: UIColor) {
         
         nameTextField.borderStyle = .none
         nameTextField.layer.borderWidth = borderWidth
         nameTextField.layer.cornerRadius = cornerRadius
-        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
+        nameTextField.layer.borderColor = borderColor.cgColor
         
         
         emailPhoneTextField.borderStyle = .none
         emailPhoneTextField.layer.borderWidth = borderWidth
         emailPhoneTextField.layer.cornerRadius = cornerRadius
-        emailPhoneTextField.layer.borderColor = UIColor.lightGray.cgColor
+        emailPhoneTextField.layer.borderColor = borderColor.cgColor
         
         pwTextField.borderStyle = .none
         pwTextField.layer.borderWidth = borderWidth
         pwTextField.layer.cornerRadius = cornerRadius
-        pwTextField.layer.borderColor = UIColor.lightGray.cgColor
+        pwTextField.layer.borderColor = borderColor.cgColor
     }
-    
-    /// TextField Font Size 변경
-    func setTextFieldFontSize(fontSize: CGFloat) {
-        nameTextField.font = UIFont.systemFont(ofSize: fontSize)
-        emailPhoneTextField.font = UIFont.systemFont(ofSize: fontSize)
-        pwTextField.font = UIFont.systemFont(ofSize: fontSize)
+
+    /// TextField Font Style 설정
+    func setTextFieldFontStyle(customFont: String, fontSize: CGFloat) {
+        nameTextField.font = UIFont(name: customFont, size: fontSize)
+        emailPhoneTextField.font = UIFont(name: customFont, size: fontSize)
+        pwTextField.font = UIFont(name: customFont, size: fontSize)
     }
     
     /// TextField addLeftPadding
@@ -88,6 +99,7 @@ class SignInVC: UIViewController {
         signUpBtn.titleLabel?.textColor = .googleBlue
         
         //signInBtn
+        
         signInBtn.setTitle("다음", for: .normal)
         signInBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
         signInBtn.backgroundColor = .googleBlue
@@ -113,9 +125,12 @@ class SignInVC: UIViewController {
         
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             
+            // 키보드가 올라감에 따라 회원가입Label <-> signUpNameTextField간의 constraint 간격을 좁혀주었습니다.
+            signInNameTextFieldTopConstraint.constant = 30
+            
             // 키보드가 올라감에 따라 뷰의 프레임을 -10 올려 텍스트필드의 입력상태가 보이게 UI를 구성했습니다.
             if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= 50
+                self.view.frame.origin.y -= 20
             }
         }
     }
@@ -125,6 +140,11 @@ class SignInVC: UIViewController {
         // 키보드가 내려감에 따라 뷰의 프레임을 0으로 되돌려 기존 UI의 원상태로 되돌려줍니다.
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
+        }
+        
+        // 키보드가 내려감에 따라 회원가입Label <-> signUpNameTextField간의 constraint 간격을 기존대로 설정해주었습니다.
+        if signInNameTextFieldTopConstraint.constant != 87.5 {
+            signInNameTextFieldTopConstraint.constant = 87.5
         }
     }
     

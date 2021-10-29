@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RUi-BK-Lvi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RUi-BK-Lvi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -171,7 +171,6 @@
                         <viewLayoutGuide key="safeArea" id="GJT-nD-o0p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="P9j-oc-GPf" firstAttribute="centerY" secondItem="zzX-9n-2Cj" secondAttribute="centerY" id="1j6-za-4HC"/>
                             <constraint firstItem="ehs-PV-ES3" firstAttribute="top" secondItem="23r-ok-0md" secondAttribute="bottom" constant="16" id="2nU-yz-vRz"/>
                             <constraint firstItem="23r-ok-0md" firstAttribute="width" secondItem="aEz-QJ-b2L" secondAttribute="width" id="3vV-ko-hG0"/>
                             <constraint firstItem="phj-nD-tSH" firstAttribute="top" secondItem="GJT-nD-o0p" secondAttribute="top" constant="60" id="7CX-4R-rpk"/>
@@ -181,16 +180,17 @@
                             <constraint firstItem="zzX-9n-2Cj" firstAttribute="top" secondItem="ehs-PV-ES3" secondAttribute="bottom" constant="40" id="KZs-fs-HTB"/>
                             <constraint firstItem="23r-ok-0md" firstAttribute="height" secondItem="aEz-QJ-b2L" secondAttribute="height" id="P9W-CI-CdE"/>
                             <constraint firstItem="oSD-Gw-wKs" firstAttribute="top" secondItem="zzX-9n-2Cj" secondAttribute="bottom" constant="45" id="PHz-F9-IAB"/>
+                            <constraint firstItem="P9j-oc-GPf" firstAttribute="centerY" secondItem="zzX-9n-2Cj" secondAttribute="centerY" id="Rum-dv-ZfZ"/>
                             <constraint firstItem="ehs-PV-ES3" firstAttribute="width" secondItem="aEz-QJ-b2L" secondAttribute="width" id="ZzS-YN-nJ0"/>
                             <constraint firstItem="GJT-nD-o0p" firstAttribute="trailing" secondItem="oSD-Gw-wKs" secondAttribute="trailing" constant="16" id="jT1-56-FvZ"/>
                             <constraint firstItem="23r-ok-0md" firstAttribute="centerX" secondItem="aEz-QJ-b2L" secondAttribute="centerX" id="kqX-et-pV9"/>
                             <constraint firstItem="GJT-nD-o0p" firstAttribute="trailing" secondItem="aEz-QJ-b2L" secondAttribute="trailing" constant="22" id="lL9-Fr-6bO"/>
                             <constraint firstItem="ehs-PV-ES3" firstAttribute="height" secondItem="aEz-QJ-b2L" secondAttribute="height" id="mUX-M2-cGe"/>
+                            <constraint firstItem="ehs-PV-ES3" firstAttribute="centerX" secondItem="aEz-QJ-b2L" secondAttribute="centerX" id="mst-TS-adX"/>
                             <constraint firstItem="GJT-nD-o0p" firstAttribute="trailing" secondItem="phj-nD-tSH" secondAttribute="trailing" id="qJG-xT-Ylv"/>
                             <constraint firstItem="P9j-oc-GPf" firstAttribute="leading" secondItem="zzX-9n-2Cj" secondAttribute="trailing" constant="8" id="tlX-Md-LDJ"/>
                             <constraint firstItem="zzX-9n-2Cj" firstAttribute="leading" secondItem="aEz-QJ-b2L" secondAttribute="leading" id="wMn-Jq-9oa"/>
                             <constraint firstItem="phj-nD-tSH" firstAttribute="leading" secondItem="GJT-nD-o0p" secondAttribute="leading" id="wTA-b1-JiI"/>
-                            <constraint firstItem="ehs-PV-ES3" firstAttribute="centerX" secondItem="aEz-QJ-b2L" secondAttribute="centerX" id="wg9-tm-G6Q"/>
                             <constraint firstItem="aEz-QJ-b2L" firstAttribute="top" secondItem="phj-nD-tSH" secondAttribute="bottom" constant="87.5" id="zwx-7b-J1h"/>
                         </constraints>
                     </view>

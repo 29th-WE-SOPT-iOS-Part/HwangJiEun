@@ -158,13 +158,13 @@ class SignInVC: UIViewController {
     //MARK: - IBAction
     /// signUpBtnDidTap - 계정만들기 버튼 눌렀을 때
     @IBAction func signUpBtnDidTap(_ sender: UIButton) {
-        guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: SignUpVC.identifier) as? SignUpVC else { return }
+        guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: identifiers.signUpVC) as? SignUpVC else { return }
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
     /// signInBtnDidTap - 다음 버튼 눌렀을 때
     @IBAction func signInBtnDidTap(_ sender: UIButton) {
-        guard let confirmVC = self.storyboard?.instantiateViewController(withIdentifier: SignConfirmVC.identifier) as? SignConfirmVC else { return }
+        guard let confirmVC = self.storyboard?.instantiateViewController(withIdentifier: identifiers.signConfirmVC) as? SignConfirmVC else { return }
         
         confirmVC.userName = nameTextField.text
         

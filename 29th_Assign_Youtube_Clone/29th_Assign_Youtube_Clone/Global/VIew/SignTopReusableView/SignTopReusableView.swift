@@ -13,7 +13,6 @@ enum SignState {
 
 class SignTopReusableView: UIView {
     
-    let xibName = "SignTopReusableView"
     let userDisplayInterfaceStyle = UITraitCollection.current.userInterfaceStyle
     
     @IBOutlet var signHeadTextLabel: UILabel!
@@ -70,7 +69,7 @@ class SignTopReusableView: UIView {
     }
     
     private func commonInit() {
-        let view = Bundle.main.loadNibNamed(xibName, owner: self, options: nil)?.first as! UIView
+        let view = Bundle.main.loadNibNamed(identifiers.SignTopReusableView, owner: self, options: nil)?.first as! UIView
         view.frame = self.bounds
         self.addSubview(view)
     }

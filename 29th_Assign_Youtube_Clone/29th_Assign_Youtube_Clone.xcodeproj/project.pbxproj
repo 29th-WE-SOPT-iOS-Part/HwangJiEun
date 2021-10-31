@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33B620D8272AF917003B065E /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620D7272AF917003B065E /* NavigationBarView.swift */; };
+		33B620DB272AF95E003B065E /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620DA272AF95E003B065E /* Identifiers.swift */; };
+		33B620DE272B065E003B065E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620DD272B065E003B065E /* UIView+Extension.swift */; };
+		33B620E3272B1398003B065E /* SubscriptionCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620E2272B1398003B065E /* SubscriptionCVCell.swift */; };
+		33B620E8272B1820003B065E /* SubscriptionListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620E7272B1820003B065E /* SubscriptionListData.swift */; };
+		33B620EA272B1D35003B065E /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B620E9272B1D35003B065E /* NavigationBarView.xib */; };
+		33B620EE272B9063003B065E /* TagCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620ED272B9063003B065E /* TagCVCell.swift */; };
+		33B620F0272B9BBB003B065E /* ContentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620EF272B9BBB003B065E /* ContentsTVCell.swift */; };
+		33B620F2272B9FC4003B065E /* MainContentsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620F1272B9FC4003B065E /* MainContentsData.swift */; };
+		33B620F4272BD0B0003B065E /* ContentsTVCellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B620F3272BD0B0003B065E /* ContentsTVCellXib.xib */; };
 		33E25992270F3537009435EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E25991270F3537009435EA /* AppDelegate.swift */; };
 		33E25994270F3537009435EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E25993270F3537009435EA /* SceneDelegate.swift */; };
 		33E2599B270F3538009435EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E2599A270F3538009435EA /* Assets.xcassets */; };
@@ -37,9 +47,20 @@
 		33F46DAC2721FCF200520C4A /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46DAB2721FCF200520C4A /* SubscribeVC.swift */; };
 		33F46DAE2721FCFC00520C4A /* Cabinet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F46DAD2721FCFC00520C4A /* Cabinet.storyboard */; };
 		33F46DB02721FD0A00520C4A /* CabinetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F46DAF2721FD0A00520C4A /* CabinetVC.swift */; };
+		5D2A341791E39E30DF1D41C7 /* Pods_29th_Assign_Youtube_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3079D94F0199D4A9AB2947 /* Pods_29th_Assign_Youtube_Clone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33B620D7272AF917003B065E /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		33B620DA272AF95E003B065E /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		33B620DD272B065E003B065E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		33B620E2272B1398003B065E /* SubscriptionCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCVCell.swift; sourceTree = "<group>"; };
+		33B620E7272B1820003B065E /* SubscriptionListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionListData.swift; sourceTree = "<group>"; };
+		33B620E9272B1D35003B065E /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		33B620ED272B9063003B065E /* TagCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCVCell.swift; sourceTree = "<group>"; };
+		33B620EF272B9BBB003B065E /* ContentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTVCell.swift; sourceTree = "<group>"; };
+		33B620F1272B9FC4003B065E /* MainContentsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentsData.swift; sourceTree = "<group>"; };
+		33B620F3272BD0B0003B065E /* ContentsTVCellXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsTVCellXib.xib; sourceTree = "<group>"; };
 		33E2598E270F3537009435EA /* 29th_Assign_Youtube_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 29th_Assign_Youtube_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E25991270F3537009435EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E25993270F3537009435EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +93,9 @@
 		33F46DAB2721FCF200520C4A /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
 		33F46DAD2721FCFC00520C4A /* Cabinet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cabinet.storyboard; sourceTree = "<group>"; };
 		33F46DAF2721FD0A00520C4A /* CabinetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetVC.swift; sourceTree = "<group>"; };
+		4A3079D94F0199D4A9AB2947 /* Pods_29th_Assign_Youtube_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_29th_Assign_Youtube_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EDFBC4549A55764300B50E5 /* Pods-29th_Assign_Youtube_Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-29th_Assign_Youtube_Clone.debug.xcconfig"; path = "Target Support Files/Pods-29th_Assign_Youtube_Clone/Pods-29th_Assign_Youtube_Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		7314A66D9712F219A8E6E534 /* Pods-29th_Assign_Youtube_Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-29th_Assign_Youtube_Clone.release.xcconfig"; path = "Target Support Files/Pods-29th_Assign_Youtube_Clone/Pods-29th_Assign_Youtube_Clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +103,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2A341791E39E30DF1D41C7 /* Pods_29th_Assign_Youtube_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B620D5272AF8EA003B065E /* SignTopReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				33F46D7F2721E36300520C4A /* SignTopReusableView.xib */,
+				33F46D832721E41A00520C4A /* SignTopReusableView.swift */,
+			);
+			path = SignTopReusableView;
+			sourceTree = "<group>";
+		};
+		33B620D6272AF8FD003B065E /* NavigationBarView */ = {
+			isa = PBXGroup;
+			children = (
+				33B620D7272AF917003B065E /* NavigationBarView.swift */,
+				33B620E9272B1D35003B065E /* NavigationBarView.xib */,
+			);
+			path = NavigationBarView;
+			sourceTree = "<group>";
+		};
+		33B620DC272AFA05003B065E /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				33B620DA272AF95E003B065E /* Identifiers.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		33B620DF272B1367003B065E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				33B620E1272B137B003B065E /* TVCell */,
+				33B620E0272B1375003B065E /* CVCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		33B620E0272B1375003B065E /* CVCell */ = {
+			isa = PBXGroup;
+			children = (
+				33B620E2272B1398003B065E /* SubscriptionCVCell.swift */,
+				33B620ED272B9063003B065E /* TagCVCell.swift */,
+			);
+			path = CVCell;
+			sourceTree = "<group>";
+		};
+		33B620E1272B137B003B065E /* TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				33B620EF272B9BBB003B065E /* ContentsTVCell.swift */,
+				33B620F3272BD0B0003B065E /* ContentsTVCellXib.xib */,
+			);
+			path = TVCell;
+			sourceTree = "<group>";
+		};
+		33B620E6272B180A003B065E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33B620E7272B1820003B065E /* SubscriptionListData.swift */,
+				33B620F1272B9FC4003B065E /* MainContentsData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		33E25985270F3537009435EA = {
 			isa = PBXGroup;
 			children = (
 				33E25990270F3537009435EA /* 29th_Assign_Youtube_Clone */,
 				33E2598F270F3537009435EA /* Products */,
+				4B20A83CADEDF1497D0A99D3 /* Pods */,
+				51E08ABCF7BACD7AEDEA5DEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +204,8 @@
 		33E259A5270F3574009435EA /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				33B620E6272B180A003B065E /* Model */,
+				33B620DC272AFA05003B065E /* Struct */,
 				33F46D7E2721E34C00520C4A /* VIew */,
 				33F46D6D2721D5AC00520C4A /* Font */,
 				33E259AC270F3663009435EA /* Extensions */,
@@ -188,6 +279,7 @@
 				33E259AD270F3672009435EA /* UIColor+Additions.swift */,
 				33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */,
 				33F46D7A2721DF9900520C4A /* UIButton+Extension.swift */,
+				33B620DD272B065E003B065E /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,8 +299,8 @@
 		33F46D7E2721E34C00520C4A /* VIew */ = {
 			isa = PBXGroup;
 			children = (
-				33F46D7F2721E36300520C4A /* SignTopReusableView.xib */,
-				33F46D832721E41A00520C4A /* SignTopReusableView.swift */,
+				33B620D6272AF8FD003B065E /* NavigationBarView */,
+				33B620D5272AF8EA003B065E /* SignTopReusableView */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -243,6 +335,7 @@
 			children = (
 				33F46D932721FC4500520C4A /* Storyboard */,
 				33F46D942721FC4C00520C4A /* Controller */,
+				33B620DF272B1367003B065E /* Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -363,6 +456,23 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		4B20A83CADEDF1497D0A99D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EDFBC4549A55764300B50E5 /* Pods-29th_Assign_Youtube_Clone.debug.xcconfig */,
+				7314A66D9712F219A8E6E534 /* Pods-29th_Assign_Youtube_Clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		51E08ABCF7BACD7AEDEA5DEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3079D94F0199D4A9AB2947 /* Pods_29th_Assign_Youtube_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,9 +480,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33E259A2270F3538009435EA /* Build configuration list for PBXNativeTarget "29th_Assign_Youtube_Clone" */;
 			buildPhases = (
+				22EE64EA21D5B0B9B28D4A7D /* [CP] Check Pods Manifest.lock */,
 				33E2598A270F3537009435EA /* Sources */,
 				33E2598B270F3537009435EA /* Frameworks */,
 				33E2598C270F3537009435EA /* Resources */,
+				0918F327DF910EE18373A3BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,8 +539,10 @@
 				33F46D802721E36300520C4A /* SignTopReusableView.xib in Resources */,
 				33F46DA22721FCB400520C4A /* Shorts.storyboard in Resources */,
 				33F46DAA2721FCE200520C4A /* Subscribe.storyboard in Resources */,
+				33B620EA272B1D35003B065E /* NavigationBarView.xib in Resources */,
 				33F46D772721D5D800520C4A /* SF-Pro-Display-Medium.otf in Resources */,
 				33E2599E270F3538009435EA /* LaunchScreen.storyboard in Resources */,
+				33B620F4272BD0B0003B065E /* ContentsTVCellXib.xib in Resources */,
 				33E259B0270F36BA009435EA /* Sign.storyboard in Resources */,
 				33F46DAE2721FCFC00520C4A /* Cabinet.storyboard in Resources */,
 				33F46D732721D5CF00520C4A /* SF-Pro-Display-Bold.otf in Resources */,
@@ -441,6 +555,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0918F327DF910EE18373A3BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-29th_Assign_Youtube_Clone/Pods-29th_Assign_Youtube_Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-29th_Assign_Youtube_Clone/Pods-29th_Assign_Youtube_Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-29th_Assign_Youtube_Clone/Pods-29th_Assign_Youtube_Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22EE64EA21D5B0B9B28D4A7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-29th_Assign_Youtube_Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33E2598A270F3537009435EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -448,15 +604,23 @@
 			files = (
 				33F46D842721E41A00520C4A /* SignTopReusableView.swift in Sources */,
 				33F46DA42721FCC300520C4A /* ShortsVC.swift in Sources */,
+				33B620D8272AF917003B065E /* NavigationBarView.swift in Sources */,
 				33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */,
 				33E259AE270F3672009435EA /* UIColor+Additions.swift in Sources */,
+				33B620F2272B9FC4003B065E /* MainContentsData.swift in Sources */,
 				33E25992270F3537009435EA /* AppDelegate.swift in Sources */,
 				33F46DAC2721FCF200520C4A /* SubscribeVC.swift in Sources */,
+				33B620EE272B9063003B065E /* TagCVCell.swift in Sources */,
 				33F46DB02721FD0A00520C4A /* CabinetVC.swift in Sources */,
+				33B620E3272B1398003B065E /* SubscriptionCVCell.swift in Sources */,
 				33E259B2270F36E6009435EA /* SignInVC.swift in Sources */,
+				33B620DB272AF95E003B065E /* Identifiers.swift in Sources */,
 				33E259B4270F36F0009435EA /* SignUpVC.swift in Sources */,
+				33B620E8272B1820003B065E /* SubscriptionListData.swift in Sources */,
 				33F46DA82721FCD700520C4A /* AddVC.swift in Sources */,
+				33B620DE272B065E003B065E /* UIView+Extension.swift in Sources */,
 				33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */,
+				33B620F0272B9BBB003B065E /* ContentsTVCell.swift in Sources */,
 				33F46D7B2721DF9900520C4A /* UIButton+Extension.swift in Sources */,
 				33E259B6270F3700009435EA /* SignConfirmVC.swift in Sources */,
 				33F46DA02721FC9600520C4A /* HomeVC.swift in Sources */,
@@ -596,6 +760,7 @@
 		};
 		33E259A3270F3538009435EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EDFBC4549A55764300B50E5 /* Pods-29th_Assign_Youtube_Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -624,6 +789,7 @@
 		};
 		33E259A4270F3538009435EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7314A66D9712F219A8E6E534 /* Pods-29th_Assign_Youtube_Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -9,8 +9,6 @@ import UIKit
 
 class SignUpVC: UIViewController {
     
-    static let identifier = "SignUpVC"
-    
     @IBOutlet var signUpTopView: SignTopReusableView! {
         didSet {
             signUpTopView.setTextLabelFontStyle(.signUp, "회원가입", "")
@@ -175,7 +173,7 @@ class SignUpVC: UIViewController {
     
     /// signUpBtnDidTap - 다음 버튼 눌렀을 때
     @IBAction func signUpBtnDidTap(_ sender: UIButton) {
-        guard let confirmVC = self.storyboard?.instantiateViewController(withIdentifier: SignConfirmVC.identifier) as? SignConfirmVC else { return }
+        guard let confirmVC = self.storyboard?.instantiateViewController(withIdentifier: identifiers.signConfirmVC) as? SignConfirmVC else { return }
         
         confirmVC.userName = signUpNameTextField.text
         

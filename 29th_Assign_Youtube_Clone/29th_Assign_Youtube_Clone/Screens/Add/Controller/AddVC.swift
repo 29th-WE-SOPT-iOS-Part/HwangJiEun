@@ -8,8 +8,6 @@
 import UIKit
 
 class AddVC: UIViewController {
-
-    static let identifier = "AddVC"
     
     override func viewDidLoad() {
         super.viewDidLoad()

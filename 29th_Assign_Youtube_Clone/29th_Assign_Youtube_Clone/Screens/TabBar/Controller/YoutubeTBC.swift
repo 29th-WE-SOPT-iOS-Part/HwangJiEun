@@ -9,16 +9,31 @@ import UIKit
 
 class YoutubeTBC: UITabBarController {
     
-    static let identifier = "YoutubeTBC"
     let userDisplayInterfaceStyle = UITraitCollection.current.userInterfaceStyle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBar()
     }
-    // MARK: - 탭바 만드는 함수
     
+    //MARK: - Custom Method
+    /// makeTabVC - 탭별 아이템 생성하는 함수
+    func makeTabVC<T>(storyboardName: String, identifier: String, vcName: T, tabBarTitle: String, tabBarImage: String, tabBarSelectedImage: String) -> T? where T: UIViewController {
+        let sb = UIStoryboard.init(name: storyboardName, bundle: nil)
+        guard let tab = sb.instantiateViewController(withIdentifier: identifier) as? T else { return nil }
+        tab.tabBarItem = UITabBarItem(title: tabBarTitle, image: UIImage(named: tabBarImage), selectedImage: UIImage(named: tabBarSelectedImage))
+        tab.tabBarItem.imageInsets = UIEdgeInsets(top: -0.5, left: -0.5, bottom: -0.5, right: -0.5)
+        return tab
+    }
+    
+    /// setTabBar - 탭바 Setting
     func setTabBar() {
+        
+        guard let homeTab = makeTabVC(storyboardName: "Home", identifier: identifiers.HomeVC, vcName: HomeVC(), tabBarTitle: "홈", tabBarImage: "homeIcon", tabBarSelectedImage: "homeIconFill"),
+              let shortsTab = makeTabVC(storyboardName: "Shorts", identifier: identifiers.ShortsVC, vcName: ShortsVC(), tabBarTitle: "Shorts", tabBarImage: "shortsIcon", tabBarSelectedImage: "shortsIconFill"),
+              let addTab = makeTabVC(storyboardName: "Add", identifier: identifiers.AddVC, vcName: AddVC(), tabBarTitle: "", tabBarImage: "plueCircleIcon", tabBarSelectedImage: "plueCircleIcon"),
+              let subscribeTab = makeTabVC(storyboardName: "Subscribe", identifier: identifiers.SubscribeVC, vcName: SubscribeVC(), tabBarTitle: "구독", tabBarImage: "subscriptionsIcon", tabBarSelectedImage: "subscriptionsIconFill"),
+              let cabinetTab = makeTabVC(storyboardName: "Cabinet", identifier: identifiers.CabinetVC, vcName: CabinetVC(), tabBarTitle: "보관함", tabBarImage: "LibraryIcon", tabBarSelectedImage: "LibraryIconFill") else { return }
         
         // 탭바 스타일 설정
         tabBar.frame.size.height = 65
@@ -36,54 +51,7 @@ class YoutubeTBC: UITabBarController {
             tabBar.tintColor = .black
         }
         
-        
-        /// HomeTab
-        let homeSB = UIStoryboard.init(name: "Home", bundle: nil)
-        guard let homeTab = homeSB.instantiateViewController(identifier: HomeVC.identifier) as? HomeVC else { return }
-        homeTab.title = "홈"
-        homeTab.tabBarItem.image = UIImage(named: "homeIcon")
-        homeTab.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
-        homeTab.tabBarItem.imageInsets = UIEdgeInsets(top: -0.5, left: -0.5, bottom: -0.5, right: -0.5)
-        
-        
-        /// ShortsTab
-        let shortsSB = UIStoryboard.init(name: "Shorts", bundle: nil)
-        guard let shortsTab = shortsSB.instantiateViewController(identifier: ShortsVC.identifier)
-                as? ShortsVC else { return }
-        shortsTab.title = "Shorts"
-        shortsTab.tabBarItem.image = UIImage(named: "shortsIcon")
-        shortsTab.tabBarItem.selectedImage = UIImage(named: "shortsIconFill")
-        shortsTab.tabBarItem.imageInsets = UIEdgeInsets(top: -0.5, left: -0.5, bottom: -0.5, right: -0.5)
-        
-        
-        /// AddTab
-        let addSB = UIStoryboard.init(name: "Add", bundle: nil)
-        guard let addTab = addSB.instantiateViewController(identifier: AddVC.identifier)
-                as? AddVC else { return }
-        addTab.tabBarItem.image = UIImage(named: "plueCircleIcon")
-        addTab.tabBarItem.selectedImage = UIImage(named: "plueCircleIcon")
-        addTab.tabBarItem.imageInsets = UIEdgeInsets(top: -13, left: -13, bottom: -13, right: -13)
-        
-        
-        /// SubscribeTab
-        let subscribeSB = UIStoryboard.init(name: "Subscribe", bundle: nil)
-        guard let subscribeTab = subscribeSB.instantiateViewController(identifier: SubscribeVC.identifier)
-                as? SubscribeVC else { return }
-        subscribeTab.title = "구독"
-        subscribeTab.tabBarItem.image = UIImage(named: "subscriptionsIcon")
-        subscribeTab.tabBarItem.selectedImage = UIImage(named: "subscriptionsIconFill")
-        subscribeTab.tabBarItem.imageInsets = UIEdgeInsets(top: -0.5, left: -0.5, bottom: -0.5, right: -0.5)
-        
-        
-        /// CabinetTab
-        let cabinetSB = UIStoryboard.init(name: "Cabinet", bundle: nil)
-        guard let cabinetTab = cabinetSB.instantiateViewController(identifier: CabinetVC.identifier)
-                as? CabinetVC else { return }
-        cabinetTab.title = "보관함"
-        cabinetTab.tabBarItem.image = UIImage(named: "LibraryIcon")
-        cabinetTab.tabBarItem.selectedImage = UIImage(named: "LibraryIconFill")
-        cabinetTab.tabBarItem.imageInsets = UIEdgeInsets(top: -0.5, left: -0.5, bottom: -0.5, right: -0.5)
-        
+        //
         // 탭 구성
         let tabs =  [homeTab, shortsTab, addTab, subscribeTab, cabinetTab]
         

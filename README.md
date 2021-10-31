@@ -14,8 +14,8 @@
 |:----------|:----------:|:----:|
 | 1️⃣ | iOS 컴포넌트 이해, XCode 기본 사용법, View 화면전환| [1주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar1), [1주차 과제](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/pull/6)|
 | 2️⃣ | AutoLayout, StackView, TabBarController | [2주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar2), [2주차 과제](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/pull/12) |
-| 3️⃣ | ScrollView, TableView, CollectionView | [3주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar3), [3주차 과제](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/pull/6) |
-| 4️⃣ | Cocoapods&Networking, REST API |  |
+| 3️⃣ | ScrollView, TableView, CollectionView | [3주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar3), [3주차 과제](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/pull/16) |
+| 4️⃣ | Cocoapods&Networking, REST API | [4주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar4), |
 | 5️⃣ | 디자인 합동 세미나 |  |
 | 6️⃣ | 서버 합동 세미나 |  |
 | 7️⃣ | Animation과 제스처, 데이터 전달 심화 |  |

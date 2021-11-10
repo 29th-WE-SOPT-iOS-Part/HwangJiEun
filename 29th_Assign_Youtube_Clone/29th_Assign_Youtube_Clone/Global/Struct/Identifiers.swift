@@ -17,6 +17,7 @@ struct identifiers {
     static let cabinetSB = "Cabinet"
     
     //MARK: - VC
+    static let signNC = "SignNC"
     static let signInVC = "SignInVC"
     static let signUpVC = "SignUpVC"
     static let signConfirmVC = "SignConfirmVC"

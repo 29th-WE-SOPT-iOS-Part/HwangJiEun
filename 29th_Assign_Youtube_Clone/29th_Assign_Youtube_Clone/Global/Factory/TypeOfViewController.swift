@@ -7,7 +7,10 @@
 
 import Foundation
 enum TypeOfViewController {
-    case sign
+    case signNC
+    case signIn
+    case signUp
+    case signConfirm
     case tabBar
     case home
     case shorts
@@ -17,22 +20,28 @@ enum TypeOfViewController {
 }
 
 extension TypeOfViewController {
-    func storyboardRepresentation() -> StroyboardRepresentation {
+    func storyboardRepresentation() -> StoryboardRepresentation {
         switch self {
-        case .sign:
-            return StroyboardRepresentation(bundle: nil, storyboardName: identifiers.signSB, storyboardId: identifiers.signInVC)
+        case .signNC:
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.signSB, storyboardId: identifiers.signNC)
+        case .signIn:
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.signSB, storyboardId: identifiers.signInVC)
+        case .signUp:
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.signSB, storyboardId: identifiers.signUpVC)
+        case .signConfirm:
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.signSB, storyboardId: identifiers.signConfirmVC)
         case .tabBar:
-            return StroyboardRepresentation(bundle: nil, storyboardName: identifiers.tabBarSB, storyboardId: identifiers.youtubeTBC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.tabBarSB, storyboardId: identifiers.youtubeTBC)
         case .home:
-            return StroyboardRepresentation(bundle: nil, storyboardName: identifiers.homeSB, storyboardId: identifiers.homeVC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.homeSB, storyboardId: identifiers.homeVC)
         case .shorts:
-            return StroyboardRepresentation(bundle: nil, storyboardName: identifiers.shortsSB, storyboardId: identifiers.shortsVC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.shortsSB, storyboardId: identifiers.shortsVC)
         case .add:
-            return StroyboardRepresentation(bundle: nil, storyboardName: identifiers.addSB, storyboardId: identifiers.addVC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.addSB, storyboardId: identifiers.addVC)
         case .subscribe:
-            return StroyboardRepresentation(bundle: nil, storyboardName: identifiers.subscribeSB, storyboardId: identifiers.subscribeVC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.subscribeSB, storyboardId: identifiers.subscribeVC)
         case .cabinet:
-            return StroyboardRepresentation(bundle: nil, storyboardName: identifiers.cabinetSB, storyboardId: identifiers.cabinetVC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: identifiers.cabinetSB, storyboardId: identifiers.cabinetVC)
         }
     }
 }

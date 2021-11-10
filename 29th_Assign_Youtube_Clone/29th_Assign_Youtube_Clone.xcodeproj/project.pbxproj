@@ -17,6 +17,9 @@
 		33B620F0272B9BBB003B065E /* ContentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620EF272B9BBB003B065E /* ContentsTVCell.swift */; };
 		33B620F2272B9FC4003B065E /* MainContentsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620F1272B9FC4003B065E /* MainContentsData.swift */; };
 		33B620F4272BD0B0003B065E /* ContentsTVCellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B620F3272BD0B0003B065E /* ContentsTVCellXib.xib */; };
+		33DE1500273C16A500E36FE7 /* StroyboardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE14FF273C16A500E36FE7 /* StroyboardRepresentation.swift */; };
+		33DE1502273C16B400E36FE7 /* TypeOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1501273C16B400E36FE7 /* TypeOfViewController.swift */; };
+		33DE1504273C171F00E36FE7 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1503273C171F00E36FE7 /* ViewControllerFactory.swift */; };
 		33E25992270F3537009435EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E25991270F3537009435EA /* AppDelegate.swift */; };
 		33E25994270F3537009435EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E25993270F3537009435EA /* SceneDelegate.swift */; };
 		33E2599B270F3538009435EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E2599A270F3538009435EA /* Assets.xcassets */; };
@@ -61,6 +64,9 @@
 		33B620EF272B9BBB003B065E /* ContentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTVCell.swift; sourceTree = "<group>"; };
 		33B620F1272B9FC4003B065E /* MainContentsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentsData.swift; sourceTree = "<group>"; };
 		33B620F3272BD0B0003B065E /* ContentsTVCellXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsTVCellXib.xib; sourceTree = "<group>"; };
+		33DE14FF273C16A500E36FE7 /* StroyboardRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroyboardRepresentation.swift; sourceTree = "<group>"; };
+		33DE1501273C16B400E36FE7 /* TypeOfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfViewController.swift; sourceTree = "<group>"; };
+		33DE1503273C171F00E36FE7 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		33E2598E270F3537009435EA /* 29th_Assign_Youtube_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 29th_Assign_Youtube_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E25991270F3537009435EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E25993270F3537009435EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +178,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		33DE14FE273C168F00E36FE7 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				33DE14FF273C16A500E36FE7 /* StroyboardRepresentation.swift */,
+				33DE1501273C16B400E36FE7 /* TypeOfViewController.swift */,
+				33DE1503273C171F00E36FE7 /* ViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		33E25985270F3537009435EA = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +220,7 @@
 		33E259A5270F3574009435EA /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				33DE14FE273C168F00E36FE7 /* Factory */,
 				33B620E6272B180A003B065E /* Model */,
 				33B620DC272AFA05003B065E /* Struct */,
 				33F46D7E2721E34C00520C4A /* VIew */,
@@ -607,6 +624,8 @@
 				33B620D8272AF917003B065E /* NavigationBarView.swift in Sources */,
 				33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */,
 				33E259AE270F3672009435EA /* UIColor+Additions.swift in Sources */,
+				33DE1504273C171F00E36FE7 /* ViewControllerFactory.swift in Sources */,
+				33DE1500273C16A500E36FE7 /* StroyboardRepresentation.swift in Sources */,
 				33B620F2272B9FC4003B065E /* MainContentsData.swift in Sources */,
 				33E25992270F3537009435EA /* AppDelegate.swift in Sources */,
 				33F46DAC2721FCF200520C4A /* SubscribeVC.swift in Sources */,
@@ -618,6 +637,7 @@
 				33E259B4270F36F0009435EA /* SignUpVC.swift in Sources */,
 				33B620E8272B1820003B065E /* SubscriptionListData.swift in Sources */,
 				33F46DA82721FCD700520C4A /* AddVC.swift in Sources */,
+				33DE1502273C16B400E36FE7 /* TypeOfViewController.swift in Sources */,
 				33B620DE272B065E003B065E /* UIView+Extension.swift in Sources */,
 				33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */,
 				33B620F0272B9BBB003B065E /* ContentsTVCell.swift in Sources */,

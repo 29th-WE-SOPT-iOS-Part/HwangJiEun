@@ -41,7 +41,7 @@ class NavigationBarView: UIView {
     }
     
     private func commonInit() {
-        let view = Bundle.main.loadNibNamed(identifiers.NavigationBarView, owner: self, options: nil)?.first as! UIView
+        let view = Bundle.main.loadNibNamed(identifiers.navigationBarView, owner: self, options: nil)?.first as! UIView
         view.frame = self.bounds
         self.addSubview(view)
     }

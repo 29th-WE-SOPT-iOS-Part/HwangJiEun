@@ -268,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="2546" y="117"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--SignNC-->
         <scene sceneID="iyM-M5-04W">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="RUi-BK-Lvi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignNC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="RUi-BK-Lvi" customClass="SignNC" customModule="_9th_Assign_Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2bt-vY-y3q">
                         <autoresizingMask key="autoresizingMask"/>

@@ -17,9 +17,17 @@
 		33B620F0272B9BBB003B065E /* ContentsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620EF272B9BBB003B065E /* ContentsTVCell.swift */; };
 		33B620F2272B9FC4003B065E /* MainContentsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B620F1272B9FC4003B065E /* MainContentsData.swift */; };
 		33B620F4272BD0B0003B065E /* ContentsTVCellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B620F3272BD0B0003B065E /* ContentsTVCellXib.xib */; };
-		33DE1500273C16A500E36FE7 /* StroyboardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE14FF273C16A500E36FE7 /* StroyboardRepresentation.swift */; };
+		33DE1500273C16A500E36FE7 /* StoryboardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE14FF273C16A500E36FE7 /* StoryboardRepresentation.swift */; };
 		33DE1502273C16B400E36FE7 /* TypeOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1501273C16B400E36FE7 /* TypeOfViewController.swift */; };
 		33DE1504273C171F00E36FE7 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1503273C171F00E36FE7 /* ViewControllerFactory.swift */; };
+		33DE1508273C228C00E36FE7 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1507273C228C00E36FE7 /* UserDefaults+Extension.swift */; };
+		33DE150A273C236D00E36FE7 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1509273C236D00E36FE7 /* APIConstants.swift */; };
+		33DE150C273C238100E36FE7 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE150B273C238100E36FE7 /* NetworkResult.swift */; };
+		33DE150E273C23AF00E36FE7 /* SignResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE150D273C23AF00E36FE7 /* SignResultData.swift */; };
+		33DE1512273C23FB00E36FE7 /* SignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1511273C23FB00E36FE7 /* SignService.swift */; };
+		33DE1515273C262000E36FE7 /* SignNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1514273C262000E36FE7 /* SignNC.swift */; };
+		33DE1519273C304F00E36FE7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE1518273C304F00E36FE7 /* UIViewController+Extension.swift */; };
+		33DE151B273C3D4300E36FE7 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE151A273C3D4300E36FE7 /* GenericResponse.swift */; };
 		33E25992270F3537009435EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E25991270F3537009435EA /* AppDelegate.swift */; };
 		33E25994270F3537009435EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E25993270F3537009435EA /* SceneDelegate.swift */; };
 		33E2599B270F3538009435EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E2599A270F3538009435EA /* Assets.xcassets */; };
@@ -64,9 +72,17 @@
 		33B620EF272B9BBB003B065E /* ContentsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTVCell.swift; sourceTree = "<group>"; };
 		33B620F1272B9FC4003B065E /* MainContentsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentsData.swift; sourceTree = "<group>"; };
 		33B620F3272BD0B0003B065E /* ContentsTVCellXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsTVCellXib.xib; sourceTree = "<group>"; };
-		33DE14FF273C16A500E36FE7 /* StroyboardRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroyboardRepresentation.swift; sourceTree = "<group>"; };
+		33DE14FF273C16A500E36FE7 /* StoryboardRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentation.swift; sourceTree = "<group>"; };
 		33DE1501273C16B400E36FE7 /* TypeOfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfViewController.swift; sourceTree = "<group>"; };
 		33DE1503273C171F00E36FE7 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		33DE1507273C228C00E36FE7 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		33DE1509273C236D00E36FE7 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		33DE150B273C238100E36FE7 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		33DE150D273C23AF00E36FE7 /* SignResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignResultData.swift; sourceTree = "<group>"; };
+		33DE1511273C23FB00E36FE7 /* SignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignService.swift; sourceTree = "<group>"; };
+		33DE1514273C262000E36FE7 /* SignNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignNC.swift; sourceTree = "<group>"; };
+		33DE1518273C304F00E36FE7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		33DE151A273C3D4300E36FE7 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		33E2598E270F3537009435EA /* 29th_Assign_Youtube_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 29th_Assign_Youtube_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E25991270F3537009435EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E25993270F3537009435EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,11 +197,27 @@
 		33DE14FE273C168F00E36FE7 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				33DE14FF273C16A500E36FE7 /* StroyboardRepresentation.swift */,
+				33DE14FF273C16A500E36FE7 /* StoryboardRepresentation.swift */,
 				33DE1501273C16B400E36FE7 /* TypeOfViewController.swift */,
 				33DE1503273C171F00E36FE7 /* ViewControllerFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		33DE150F273C23D800E36FE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33DE150D273C23AF00E36FE7 /* SignResultData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33DE1510273C23EE00E36FE7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				33DE1511273C23FB00E36FE7 /* SignService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		33E25985270F3537009435EA = {
@@ -210,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				33E259A5270F3574009435EA /* Global */,
-				33E259A6270F357F009435EA /* Network */,
 				33E259A7270F3586009435EA /* Screens */,
 				33E259A8270F358F009435EA /* Supports */,
 			);
@@ -221,9 +252,10 @@
 			isa = PBXGroup;
 			children = (
 				33DE14FE273C168F00E36FE7 /* Factory */,
+				33E259A6270F357F009435EA /* Network */,
 				33B620E6272B180A003B065E /* Model */,
-				33B620DC272AFA05003B065E /* Struct */,
 				33F46D7E2721E34C00520C4A /* VIew */,
+				33B620DC272AFA05003B065E /* Struct */,
 				33F46D6D2721D5AC00520C4A /* Font */,
 				33E259AC270F3663009435EA /* Extensions */,
 				33E2599C270F3538009435EA /* LaunchScreen.storyboard */,
@@ -234,6 +266,9 @@
 		33E259A6270F357F009435EA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				33DE1509273C236D00E36FE7 /* APIConstants.swift */,
+				33DE150B273C238100E36FE7 /* NetworkResult.swift */,
+				33DE151A273C3D4300E36FE7 /* GenericResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -268,6 +303,8 @@
 			children = (
 				33E259AA270F362F009435EA /* Storyboard */,
 				33E259AB270F363F009435EA /* Controllers */,
+				33DE150F273C23D800E36FE7 /* Model */,
+				33DE1510273C23EE00E36FE7 /* Service */,
 			);
 			path = Sign;
 			sourceTree = "<group>";
@@ -286,6 +323,7 @@
 				33E259B1270F36E6009435EA /* SignInVC.swift */,
 				33E259B3270F36F0009435EA /* SignUpVC.swift */,
 				33E259B5270F3700009435EA /* SignConfirmVC.swift */,
+				33DE1514273C262000E36FE7 /* SignNC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +335,8 @@
 				33E259B7270F3F1D009435EA /* UITextfield+Extension.swift */,
 				33F46D7A2721DF9900520C4A /* UIButton+Extension.swift */,
 				33B620DD272B065E003B065E /* UIView+Extension.swift */,
+				33DE1507273C228C00E36FE7 /* UserDefaults+Extension.swift */,
+				33DE1518273C304F00E36FE7 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -625,9 +665,13 @@
 				33F46D882721FA2300520C4A /* YoutubeTBC.swift in Sources */,
 				33E259AE270F3672009435EA /* UIColor+Additions.swift in Sources */,
 				33DE1504273C171F00E36FE7 /* ViewControllerFactory.swift in Sources */,
-				33DE1500273C16A500E36FE7 /* StroyboardRepresentation.swift in Sources */,
+				33DE1500273C16A500E36FE7 /* StoryboardRepresentation.swift in Sources */,
+				33DE150E273C23AF00E36FE7 /* SignResultData.swift in Sources */,
 				33B620F2272B9FC4003B065E /* MainContentsData.swift in Sources */,
+				33DE1515273C262000E36FE7 /* SignNC.swift in Sources */,
+				33DE150A273C236D00E36FE7 /* APIConstants.swift in Sources */,
 				33E25992270F3537009435EA /* AppDelegate.swift in Sources */,
+				33DE1519273C304F00E36FE7 /* UIViewController+Extension.swift in Sources */,
 				33F46DAC2721FCF200520C4A /* SubscribeVC.swift in Sources */,
 				33B620EE272B9063003B065E /* TagCVCell.swift in Sources */,
 				33F46DB02721FD0A00520C4A /* CabinetVC.swift in Sources */,
@@ -639,11 +683,15 @@
 				33F46DA82721FCD700520C4A /* AddVC.swift in Sources */,
 				33DE1502273C16B400E36FE7 /* TypeOfViewController.swift in Sources */,
 				33B620DE272B065E003B065E /* UIView+Extension.swift in Sources */,
+				33DE1512273C23FB00E36FE7 /* SignService.swift in Sources */,
+				33DE150C273C238100E36FE7 /* NetworkResult.swift in Sources */,
 				33E259B8270F3F1D009435EA /* UITextfield+Extension.swift in Sources */,
 				33B620F0272B9BBB003B065E /* ContentsTVCell.swift in Sources */,
 				33F46D7B2721DF9900520C4A /* UIButton+Extension.swift in Sources */,
 				33E259B6270F3700009435EA /* SignConfirmVC.swift in Sources */,
+				33DE151B273C3D4300E36FE7 /* GenericResponse.swift in Sources */,
 				33F46DA02721FC9600520C4A /* HomeVC.swift in Sources */,
+				33DE1508273C228C00E36FE7 /* UserDefaults+Extension.swift in Sources */,
 				33E25994270F3537009435EA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

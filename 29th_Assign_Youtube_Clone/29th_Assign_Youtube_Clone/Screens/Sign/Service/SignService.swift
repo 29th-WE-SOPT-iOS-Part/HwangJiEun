@@ -129,8 +129,10 @@ struct SignService {
         switch status {
         case 200:
             return .success(decodedData.data ?? "None-Data")
-        case 400..<500:
+        case 400:
             return .requestErr(decodedData.message)
+        case 404:
+            return .pathErr
         case 500:
             return .serverErr
         default:

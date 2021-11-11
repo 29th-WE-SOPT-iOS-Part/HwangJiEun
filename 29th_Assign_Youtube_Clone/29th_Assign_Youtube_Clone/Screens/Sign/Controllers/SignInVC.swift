@@ -50,6 +50,12 @@ class SignInVC: UIViewController {
         keyboardObserver()
     }
     
+    // 다른계정으로 로그인 버튼을 눌러 해당 VC로 되돌아왔을 때는 VC의 lifecycle이 viewWillAppear이므로
+    // 텍스트필드들의 텍스트를 지우는 함수를 수행
+    override func viewWillAppear(_ animated: Bool) {
+        makeTextFieldEmpty()
+    }
+    
     /// TextField Border Styling
     func setTextFieldBorderStyle(borderWidth: CGFloat, cornerRadius: CGFloat, borderColor: UIColor) {
         
@@ -89,6 +95,13 @@ class SignInVC: UIViewController {
         nameTextField.placeholder = "이름을 입력해주세요."
         emailPhoneTextField.placeholder = "이메일 또는 휴대전화"
         pwTextField.placeholder = "비밀번호 입력"
+    }
+    
+    /// TextField text 지우기
+    func makeTextFieldEmpty() {
+        nameTextField.text?.removeAll()
+        emailPhoneTextField.text?.removeAll()
+        pwTextField.text?.removeAll()
     }
     
     /// Button 속성 설정 (titleLabel, color, cornerRadius)
@@ -249,6 +262,7 @@ extension SignInVC {
                 }
             case .pathErr:
                 print("pathErr")
+                self.showAlert(alertText: "로그인", alertMessage: "잘못된 경로입니다.", isSuccess: false, vc: UIViewController())
             case .serverErr:
                 print("serverErr")
             case .networkFail:

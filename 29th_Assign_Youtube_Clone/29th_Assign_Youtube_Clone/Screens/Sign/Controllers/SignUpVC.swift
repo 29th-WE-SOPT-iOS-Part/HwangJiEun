@@ -261,6 +261,7 @@ extension SignUpVC {
                 }
             case .pathErr:
                 print("pathErr")
+                self.showAlert(alertText: "회원가입", alertMessage: "잘못된 경로입니다.", isSuccess: false, vc: UIViewController())
             case .serverErr:
                 print("serverErr")
             case .networkFail:

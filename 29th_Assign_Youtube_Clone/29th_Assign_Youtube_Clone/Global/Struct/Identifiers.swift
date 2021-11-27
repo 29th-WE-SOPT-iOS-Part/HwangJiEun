@@ -7,17 +7,35 @@
 
 import Foundation
 struct identifiers {
+    //MARK: - SB
+    static let tabBarSB = "TabBar"
+    static let signSB = "Sign"
+    static let homeSB = "Home"
+    static let shortsSB = "Shorts"
+    static let addSB = "Add"
+    static let subscribeSB = "Subscribe"
+    static let cabinetSB = "Cabinet"
+    
+    //MARK: - VC
+    static let signNC = "SignNC"
+    static let signInVC = "SignInVC"
     static let signUpVC = "SignUpVC"
     static let signConfirmVC = "SignConfirmVC"
-    static let YoutubeTBC = "YoutubeTBC"
-    static let HomeVC = "HomeVC"
-    static let ShortsVC = "ShortsVC"
-    static let AddVC = "AddVC"
-    static let SubscribeVC = "SubscribeVC"
-    static let CabinetVC = "CabinetVC"
-    static let SignTopReusableView = "SignTopReusableView"
-    static let NavigationBarView = "NavigationBarView"
-    static let SubscriptionCVCell = "SubscriptionCVCell"
-    static let TagCVCell = "TagCVCell"
-    static let ContentsTVCell = "ContentsTVCell"
+    static let youtubeTBC = "YoutubeTBC"
+    static let homeVC = "HomeVC"
+    static let shortsVC = "ShortsVC"
+    static let addVC = "AddVC"
+    static let subscribeVC = "SubscribeVC"
+    static let cabinetVC = "CabinetVC"
+    
+    //MARK: - View
+    static let signTopReusableView = "SignTopReusableView"
+    static let navigationBarView = "NavigationBarView"
+    
+    //MARK: - CVC
+    static let subscriptionCVCell = "SubscriptionCVCell"
+    
+    //MARK: - TVC
+    static let tagCVCell = "TagCVCell"
+    static let contentsTVCell = "ContentsTVCell"
 }

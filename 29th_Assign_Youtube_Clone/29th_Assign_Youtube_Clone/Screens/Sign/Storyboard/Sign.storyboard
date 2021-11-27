@@ -12,7 +12,7 @@
         <!--Sign InVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="SignInVC" customModule="_9th_Assign_Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" id="Y6W-OH-hqX" customClass="SignInVC" customModule="_9th_Assign_Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="2546" y="117"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--SignNC-->
         <scene sceneID="iyM-M5-04W">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="RUi-BK-Lvi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignNC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="RUi-BK-Lvi" customClass="SignNC" customModule="_9th_Assign_Youtube_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2bt-vY-y3q">
                         <autoresizingMask key="autoresizingMask"/>

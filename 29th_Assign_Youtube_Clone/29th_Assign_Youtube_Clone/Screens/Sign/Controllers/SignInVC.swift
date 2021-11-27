@@ -50,7 +50,11 @@ class SignInVC: UIViewController {
         keyboardObserver()
     }
     
-    
+    // 다른계정으로 로그인 버튼을 눌러 해당 VC로 되돌아왔을 때는 VC의 lifecycle이 viewWillAppear이므로
+    // 텍스트필드들의 텍스트를 지우는 함수를 수행
+    override func viewWillAppear(_ animated: Bool) {
+        makeTextFieldEmpty()
+    }
     
     /// TextField Border Styling
     func setTextFieldBorderStyle(borderWidth: CGFloat, cornerRadius: CGFloat, borderColor: UIColor) {
@@ -91,6 +95,13 @@ class SignInVC: UIViewController {
         nameTextField.placeholder = "이름을 입력해주세요."
         emailPhoneTextField.placeholder = "이메일 또는 휴대전화"
         pwTextField.placeholder = "비밀번호 입력"
+    }
+    
+    /// TextField text 지우기
+    func makeTextFieldEmpty() {
+        nameTextField.text?.removeAll()
+        emailPhoneTextField.text?.removeAll()
+        pwTextField.text?.removeAll()
     }
     
     /// Button 속성 설정 (titleLabel, color, cornerRadius)
@@ -158,18 +169,13 @@ class SignInVC: UIViewController {
     //MARK: - IBAction
     /// signUpBtnDidTap - 계정만들기 버튼 눌렀을 때
     @IBAction func signUpBtnDidTap(_ sender: UIButton) {
-        guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: identifiers.signUpVC) as? SignUpVC else { return }
+        let signUpVC = ViewControllerFactory.viewController(for: .signUp)
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
     /// signInBtnDidTap - 다음 버튼 눌렀을 때
     @IBAction func signInBtnDidTap(_ sender: UIButton) {
-        guard let confirmVC = self.storyboard?.instantiateViewController(withIdentifier: identifiers.signConfirmVC) as? SignConfirmVC else { return }
-        
-        confirmVC.userName = nameTextField.text
-        
-        confirmVC.modalPresentationStyle = .fullScreen
-        self.present(confirmVC, animated: true, completion: nil)
+        requestLogin()
     }
 }
 
@@ -236,6 +242,53 @@ extension SignInVC: UITextFieldDelegate {
         }
         else {
             signInBtn.isEnabled = false
+        }
+    }
+}
+//MARK: - Network
+extension SignInVC {
+    /// requestLogin - 로그인 통신하는(post) 함수
+    func requestLogin() {
+        SignService.shared.login(email: emailPhoneTextField.text ?? "", password: pwTextField.text ?? "") { [self] networkResult in
+            switch networkResult {
+            case .success(let loginResponse):
+                if let response = loginResponse as? SignResultData {
+                    reguestUserInfo(userData: response.id)
+                    self.showAlert(alertText: "로그인", alertMessage: "로그인 성공", isSuccess: true, vc: ViewControllerFactory.viewController(for: .signConfirm))
+                }
+            case .requestErr(let msg):
+                if let message = msg as? String {
+                    self.showAlert(alertText: "로그인", alertMessage: "\(message)", isSuccess: false, vc: UIViewController())
+                }
+            case .pathErr:
+                print("pathErr")
+                self.showAlert(alertText: "로그인", alertMessage: "잘못된 경로입니다.", isSuccess: false, vc: UIViewController())
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+            
+        }
+    }
+    
+    /// reguestUserInfo - 로그인 후 얻은 id값으로 로그인된 User의 정보를 통신하는(get) 함수
+    func reguestUserInfo(userData: Int) {
+        SignService.shared.getUser(userId: userData) { networkResult in
+            switch networkResult {
+            case .success(let userResponse):
+                if let response = userResponse as? SignResultData {
+                    UserDefaults.standard.set(response.name, forKey: UserDefaults.Keys.loginUserName)
+                }
+            case .requestErr(let msg):
+                print("requestErr \(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
         }
     }
 }

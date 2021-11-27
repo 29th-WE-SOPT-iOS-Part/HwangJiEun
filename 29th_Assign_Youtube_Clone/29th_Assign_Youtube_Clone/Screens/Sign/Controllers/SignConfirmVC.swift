@@ -13,7 +13,8 @@ class SignConfirmVC: UIViewController {
     
     @IBOutlet var signConfirmTopView: SignTopReusableView! {
         didSet {
-            if let user = userName {
+            //userDefaults에 저장된 userName값을 이용하여 confirmView의 userName값 설정
+            if let user = UserDefaults.standard.string(forKey: UserDefaults.Keys.loginUserName) {
                 signConfirmTopView.setTextLabelFontStyle(.welcome, user, "")
             }
         }
@@ -44,12 +45,8 @@ class SignConfirmVC: UIViewController {
     }
     
     @IBAction func confirmBtnDidTap(_ sender: UIButton) {
-       // 탭바VC로 이동
-        let tabBarSB = UIStoryboard.init(name: "TabBar", bundle: nil)
-        guard let tabBarVC = tabBarSB.instantiateViewController(identifier: identifiers.YoutubeTBC) as? YoutubeTBC else { return }
-        
-        tabBarVC.modalPresentationStyle = .fullScreen
-        self.present(tabBarVC, animated: true, completion: nil)
+       // 탭바VC로 이동 -> Modal 2번 한꺼번에 dismiss
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func otherAccountBtnDidTap(_ sender: UIButton) {

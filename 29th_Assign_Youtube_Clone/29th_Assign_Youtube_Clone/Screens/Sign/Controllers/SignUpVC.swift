@@ -173,15 +173,7 @@ class SignUpVC: UIViewController {
     
     /// signUpBtnDidTap - 다음 버튼 눌렀을 때
     @IBAction func signUpBtnDidTap(_ sender: UIButton) {
-        guard let confirmVC = self.storyboard?.instantiateViewController(withIdentifier: identifiers.signConfirmVC) as? SignConfirmVC else { return }
-        
-        confirmVC.userName = signUpNameTextField.text
-        
-        confirmVC.modalPresentationStyle = .fullScreen
-        self.present(confirmVC, animated: true, completion: {
-            //confirmVC로 modal present와 동시에 navigation stack에서 signUpVC를 pop해줘서 rootVC로 돌아가게끔 해줍니다. (popViewController, popToRootViewController 모두 가능)
-            self.navigationController?.popToRootViewController(animated: true)
-        })
+        requestSignUp()
     }
 }
 
@@ -220,7 +212,7 @@ extension SignUpVC: UITextFieldDelegate {
     // name,emailPhone,pw TextField가 입력중일 때 TextField의 텍스트 수를 체크합니다.
     // 만약 세 TextField에 모두 텍스트가 입력되었다면 signUpBtn을 활성화시킵니다.
     @objc func nameTextIsEditing(_ TextLabel: UITextField) {
-       
+        
         if signUpNameTextField.hasText && signUpEmailPhoneTextField.hasText && signUpPwTextField.hasText {
             signUpBtn.isEnabled = true
         }
@@ -248,6 +240,53 @@ extension SignUpVC: UITextFieldDelegate {
         }
         else {
             signUpBtn.isEnabled = false
+        }
+    }
+}
+//MARK: - Network 
+extension SignUpVC {
+    /// requestSignUp - 회원가입 통신하는(post) 함수
+    func requestSignUp() {
+        SignService.shared.signUp(email: signUpEmailPhoneTextField.text ?? "", name: signUpNameTextField.text ?? "", password: signUpPwTextField.text ?? "") { [self] networkResult in
+            switch networkResult {
+            case .success(let signUpResponse):
+                if let response = signUpResponse as? SignResultData {
+                    //Alert에서 확인버튼 누르면 ConfirmVC로 넘기기
+                    reguestUserInfo(userData: response.id)
+                    self.showAlert(alertText: "회원가입", alertMessage: "회원가입 성공", isSuccess: true, vc: ViewControllerFactory.viewController(for: .signConfirm))
+                }
+            case .requestErr(let msg):
+                if let message = msg as? String {
+                    self.showAlert(alertText: "회원가입", alertMessage: "\(message)", isSuccess: false, vc: UIViewController())
+                }
+            case .pathErr:
+                print("pathErr")
+                self.showAlert(alertText: "회원가입", alertMessage: "잘못된 경로입니다.", isSuccess: false, vc: UIViewController())
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
+    }
+    
+    /// reguestUserInfo - 회원가입 후 얻은 id값으로 회원가입된 User의 정보를 통신하는(get) 함수
+    func reguestUserInfo(userData: Int) {
+        SignService.shared.getUser(userId: userData) { networkResult in
+            switch networkResult {
+            case .success(let signUpResponse):
+                if let response = signUpResponse as? SignResultData {
+                    UserDefaults.standard.set(response.name, forKey: UserDefaults.Keys.loginUserName)
+                }
+            case .requestErr(let msg):
+                print("\(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
         }
     }
 }

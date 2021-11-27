@@ -26,6 +26,7 @@ class NavigationBarView: UIView {
     }
     private var profileBtn = UIButton().then {
         $0.setBackgroundImage(UIImage(named: "wesoptProfile"), for: .normal)
+        $0.addTarget(self, action: #selector(pushSignNCDidTap), for: .touchUpInside)
     }
     
     //Mark :- Life Cycle
@@ -41,9 +42,15 @@ class NavigationBarView: UIView {
     }
     
     private func commonInit() {
-        let view = Bundle.main.loadNibNamed(identifiers.NavigationBarView, owner: self, options: nil)?.first as! UIView
+        let view = Bundle.main.loadNibNamed(identifiers.navigationBarView, owner: self, options: nil)?.first as! UIView
         view.frame = self.bounds
         self.addSubview(view)
+    }
+    
+    @objc func pushSignNCDidTap() {
+        let signNC = ViewControllerFactory.viewController(for: .signNC)
+        signNC.modalPresentationStyle = .fullScreen
+        self.window?.rootViewController?.present(signNC, animated: true, completion: nil)
     }
 }
 

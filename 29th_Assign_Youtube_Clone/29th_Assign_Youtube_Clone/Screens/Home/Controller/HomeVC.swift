@@ -60,9 +60,9 @@ class HomeVC: UIViewController {
     
     // 셀 등록
     private func registerCell() {
-        subscriptionCV.register(SubscriptionCVCell.self, forCellWithReuseIdentifier: identifiers.SubscriptionCVCell)
-        tagCV.register(TagCVCell.self, forCellWithReuseIdentifier: identifiers.TagCVCell)
-        contentTV.register(ContentsTVCell.self, forCellReuseIdentifier: identifiers.ContentsTVCell)
+        subscriptionCV.register(SubscriptionCVCell.self, forCellWithReuseIdentifier: identifiers.subscriptionCVCell)
+        tagCV.register(TagCVCell.self, forCellWithReuseIdentifier: identifiers.tagCVCell)
+        contentTV.register(ContentsTVCell.self, forCellReuseIdentifier: identifiers.contentsTVCell)
     }
 }
 
@@ -111,14 +111,14 @@ extension HomeVC: UICollectionViewDataSource {
     /// cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == subscriptionCV {
-            let cell = subscriptionCV.dequeueReusableCell(withReuseIdentifier: identifiers.SubscriptionCVCell, for: indexPath)
+            let cell = subscriptionCV.dequeueReusableCell(withReuseIdentifier: identifiers.subscriptionCVCell, for: indexPath)
             if let subscriptionCell = cell as? SubscriptionCVCell {
                 subscriptionCell.bind(subscriptionData[indexPath.row].makeImage() ?? UIImage(), subscriptionData[indexPath.row].nickName)
             }
             return cell
         }
         else {
-            let cell = tagCV.dequeueReusableCell(withReuseIdentifier: identifiers.TagCVCell, for: indexPath)
+            let cell = tagCV.dequeueReusableCell(withReuseIdentifier: identifiers.tagCVCell, for: indexPath)
             if let tagCell = cell as? TagCVCell {
                 tagCell.bind(tagArray[indexPath.row])
             }
@@ -148,7 +148,7 @@ extension HomeVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = contentTV.dequeueReusableCell(withIdentifier: identifiers.ContentsTVCell, for: indexPath)
+        let cell = contentTV.dequeueReusableCell(withIdentifier: identifiers.contentsTVCell, for: indexPath)
         if let contentsCell = cell as? ContentsTVCell {
             contentsCell.bind(
                 mainContentList[indexPath.row].makeThumbNailImage() ?? UIImage(),

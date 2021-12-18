@@ -18,8 +18,8 @@
 | 4️⃣ | Cocoapods&Networking, REST API | [4주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar4), [4주차 과제](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/pull/21) |
 | 5️⃣ | 디자인 합동 세미나 | [합동세미나 9조 (Genie🎧💙)](https://github.com/SOPT-29th-JointSeminar-9/Client-iOS) |
 | 6️⃣ | 서버 합동 세미나 | [합동세미나 9조 (Genie🎧💙)](https://github.com/SOPT-29th-JointSeminar-9/Client-iOS) |
-| 7️⃣ | Animation과 제스처, 데이터 전달 심화 | [7주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar7) |
-| 8️⃣ | 라이브러리 사용 |  |
+| 7️⃣ | 제스처, 데이터 전달 심화 | [7주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar7) |
+| 8️⃣ | Animation, 라이브러리 사용 | [8주차 세미나](https://github.com/29th-WE-SOPT-iOS-Part/HwangJiEun/tree/main/Seminar8) |
 
 <br>
 
